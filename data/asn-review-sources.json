@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "legiz-selection",
+      "repo": "legiz-ru/sb-rule-sets",
+      "ref": "main",
+      "path": ".github/workflows/srs.yml",
+      "parser": "asn-heredoc",
+      "evidence_kind": "community-selection"
+    },
+    {
+      "id": "dpi-checkers-targets",
+      "repo": "hyperion-cs/dpi-checkers",
+      "ref": "main",
+      "path": "ru/dpi-ch/config/default.yaml",
+      "parser": "dpi-targets",
+      "section": "Foreign Infrastructure Providers",
+      "evidence_kind": "diagnostic-target"
+    }
+  ]
+}

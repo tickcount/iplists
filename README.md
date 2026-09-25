@@ -55,3 +55,21 @@ Scripts live in `scripts/`; sources and categories are defined in [config.yml](c
 Domain sources default to `domain_match: suffix`; use `domain_match: exact` for an entire source, `exact_domains: [host.example.com]` for specific names, or `exact_domain_suffixes: [cloud.example.com]` for names strictly below a cloud boundary. Exact names never collapse into a parent; an existing suffix rule can make them redundant. `domains*.txt` preserves the respective file's matching mode.
 
 Actions shows category counts, IPv4/IPv6 changes, sources and applied exceptions in its job summary, including build failures. Actions are pinned by commit SHA; the cached sing-box archive is SHA-256-verified on every run. For a local diagnostic report, add `--build-report /tmp/iplists-build.json`. `--offline` reuses downloaded snapshots without network access.
+
+## Review ASN candidates
+
+The separate **Review ASN Candidates** workflow runs every six hours. It compares the community ASN selection in `legiz-ru/sb-rule-sets` and explicit foreign-provider ASN targets in `hyperion-cs/dpi-checkers` with our selection. Its Actions summary and `asn-review` artifact contain candidates, per-source differences, source revisions/hashes and collection time. Diagnostic targets do not prove blocking; missing entries do not recommend removal. Failed sources are marked unknown and fail the review job without stopping rule publication. No probes run and no ASN is added or removed automatically. After reviewing the evidence, edit `data/rkn-asns.txt` explicitly.
+
+```sh
+python scripts/asn_review.py --output /tmp/asn-review.json --summary /tmp/asn-review.md
+```
+
+Sources are configured in `data/asn-review-sources.json`. Organization searches and constrained filters are reported as unresolved, never expanded into whole ASNs. `--offline` replays cached snapshots and labels the report accordingly.
+
+There is no external measurement feed by default. To attach attributed observations, pass `--observations /path/to/observations.json` using this schema:
+
+```json
+{"version": 1, "observations": [{"asn": 13335, "operator": "Operator where the test ran", "method": "Describe the test and sampled targets", "source_url": "https://example.org/report", "observed_at": "2026-09-25T12:00:00Z", "result": "restriction-observed"}]}
+```
+
+Results may be `restriction-observed`, `reachable`, or `inconclusive`. Observations older than 30 days are marked stale; only recent restriction observations propose candidates. They describe the reported sample, never prove an entire ASN is blocked, and never change the rules. Observation dates are separate from collection and repository commit dates.
