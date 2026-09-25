@@ -21,6 +21,8 @@ Files live in `rules/<Category>/`; names are case-sensitive.
 
 Every SRS has a `.json` equivalent. Individual lists also have `.txt` exports; there is no `bundle.txt`. Bundles include both domain modes and core IPs; observed addresses and extended ranges are excluded. RKNAsnBlock is an explicit exception: its `ip.srs` and bundle contain the selected ASN networks. Use both domain files for complete domain-only coverage. IPv4 and IPv6 remain combined in each IP file.
 
+Tachyon 1.4 infers the DNS rule type from the URL. For service bundles, use `bundle.srs?profile=compact-domains`; for Telegram use `bundle.srs?profile=compact-domains-ip`. Without these hints, `bundle.srs` is classified as unknown and gets no FakeIP DNS rule. RKNAsnBlock keeps its regular `ip.srs` URL.
+
 On Tachyon, enable **Include IP addresses and subnets** for Telegram and RKNAsnBlock. The other service bundles currently contain domains only. Preserve Discord's port-specific voice rules separately; a domain list cannot cover all voice traffic. Switching from the former bundles deliberately removes bulk IP matching: use `ip-observed.srs` only if a client requires it.
 
 For example, merge this fragment into your sing-box config and replace `proxy` with your outbound tag:
