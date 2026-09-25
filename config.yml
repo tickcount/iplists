@@ -134,6 +134,24 @@ sources:
     type: iplist
     url: https://iplist.opencck.org/
     sites: [revanced.app]
+  meta-iplist:
+    type: iplist
+    url: https://iplist.opencck.org/
+    sites: [facebook.com, instagram.com, whatsapp.com, messenger.com, meta.ai]
+  meta-domains:
+    type: text
+    data: domains
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/meta.lst
+  meta-community-v4:
+    type: text
+    data: ipv4
+    profile: extended
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/meta.lst
+  meta-community-v6:
+    type: text
+    data: ipv6
+    profile: extended
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv6/meta.lst
   apple-iplist:
     type: iplist
     url: https://beta.iplist.opencck.org/
@@ -218,6 +236,8 @@ categories:
     sources: [telegram-iplist, telegram-official, telegram-domains, telegram-community-v4, telegram-community-v6]
   YouTube:
     sources: [youtube-iplist, revanced-iplist]
+  Meta:
+    sources: [meta-iplist, meta-domains, meta-community-v4, meta-community-v6]
   Apple:
     sources: [apple-iplist]
   Microsoft:
