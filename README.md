@@ -18,8 +18,6 @@ Files live in `rules/<Category>/`; names are case-sensitive.
 
 Every SRS has a `.json` equivalent. Individual lists also have `.txt` exports; there is no `bundle.txt`. Bundles include both domain modes and core IPs; extended ranges are excluded. Use both domain files for complete domain-only coverage. The former `ipv4.*`/`ipv6.*` files are replaced by `ip.*` (likewise for extended lists).
 
-RKNAsnBlock is generated independently from [our ASN selection](data/rkn-asns.txt): RIPEstat announcements → public IPv4/IPv6 validation → lossless collapse → JSON/SRS/TXT. It uses the API's default two-week observation window and a minimum of 10 RIS peers. Each of the 389 ASN responses is hashed and reported; empty responses are explicit, request failures stop publication. No third-party generated RKN list is downloaded. Its core files intentionally cover broad ASN networks, not individually confirmed blocked IPs.
-
 For example, merge this fragment into your sing-box config and replace `proxy` with your outbound tag:
 
 ```json
@@ -38,6 +36,12 @@ For example, merge this fragment into your sing-box config and replace `proxy` w
 ```
 
 Replace `AI` with another category, or choose a specific file such as `GitHub/domains-exact.srs` or `Telegram/ip.txt`. IP lists may include shared or historical addresses; domain rules usually provide more precise service selection.
+
+## RKNAsnBlock
+
+An IP rule set for routing selected hosting-provider networks potentially affected by restrictions in Russia. An ASN identifies an autonomous network; this list covers its announced IPv4/IPv6 prefixes, including shared infrastructure and services that may still work. It is not a registry of individually confirmed blocked addresses.
+
+The [ASN selection](data/rkn-asns.txt) was initially imported from `legiz-ru/sb-rule-sets` and is maintained explicitly. GitHub Actions fetches prefixes directly from RIPEstat every six hours, validates them and collapses them without expanding coverage. Use `rules/RKNAsnBlock/ip.srs` (also available as JSON/TXT). Network ranges update automatically; ASN membership changes require review. [Candidate reports](#review-asn-candidates) provide supporting information without modifying the list.
 
 ## Build locally
 
