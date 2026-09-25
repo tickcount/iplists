@@ -1,0 +1,8 @@
+# Observed during Gemini iOS startup on 2026-09-25.
+# Supplement upstream Gemini lists with its mobile API and shared account APIs.
+# Keep individual hosts: googleapis.com also serves unrelated Google products.
+accountcapabilities-pa.googleapis.com
+oauthaccountmanager.googleapis.com
+people-pa.googleapis.com
+robinfrontend-pa.googleapis.com
+signaler-pa.googleapis.com

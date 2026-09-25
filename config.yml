@@ -69,6 +69,10 @@ sources:
     type: iplist
     url: https://beta.iplist.opencck.org/
     sites: [google@gemini, google@google-gemini]
+  gemini-mobile-local:
+    type: text
+    data: domains
+    file: data/gemini-mobile-domains.txt
 
   discord-iplist:
     type: iplist
@@ -229,7 +233,7 @@ sources:
 
 categories:
   AI:
-    sources: [ai-iplist, gemini-iplist]
+    sources: [ai-iplist, gemini-iplist, gemini-mobile-local]
   Discord:
     sources: [discord-iplist, discord-domains, discord-local, discord-community-v4, discord-community-v6]
   Telegram:

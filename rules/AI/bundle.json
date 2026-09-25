@@ -2,6 +2,7 @@
   "rules": [
     {
       "domain_suffix": [
+        "accountcapabilities-pa.googleapis.com",
         "acctcdnmsftuswe2.azureedge.net",
         "acctcdnvzeuno.azureedge.net",
         "ai.google.dev",
@@ -87,10 +88,12 @@
         "mtalk.google.com",
         "nexus-websocket-a.intercom.io",
         "oaistatic.com",
+        "oauthaccountmanager.googleapis.com",
         "openai.com",
         "openai.fund",
         "openai.org",
         "people-pa.clients6.google.com",
+        "people-pa.googleapis.com",
         "perplexity-ai.cloudflareaccess.com",
         "perplexity.ai",
         "perplexity.com",
@@ -100,9 +103,11 @@
         "pplx.ai",
         "proactivebackend-pa.googleapis.com",
         "push.clients6.google.com",
+        "robinfrontend-pa.googleapis.com",
         "sapphire.api.microsoftapp.net",
         "self.events.data.microsoft.com",
         "services.bingapis.com",
+        "signaler-pa.googleapis.com",
         "static.intercomassets.com",
         "status.x.ai",
         "sydney.bing.com",

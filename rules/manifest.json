@@ -1,13 +1,13 @@
 {
   "artifacts": {
-    "AI/bundle.json": "158f7e56e5db573b0e1820cf60becc657d9bcb66cae40808ac7692caf0a886ba",
-    "AI/bundle.srs": "c776643ca3009b75b8bd7fbec3d6826831987b85e2d6ed3767d83ae1aff14895",
+    "AI/bundle.json": "51a73e33dcd5a6f3bab43e90a348b14d23c2724c63565666c567daf050070135",
+    "AI/bundle.srs": "162a987a71d1b9e985f839e5f1a56db57210fde25cbac6e834192bb7ab13a465",
     "AI/domains-exact.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
     "AI/domains-exact.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
     "AI/domains-exact.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "AI/domains.json": "158f7e56e5db573b0e1820cf60becc657d9bcb66cae40808ac7692caf0a886ba",
-    "AI/domains.srs": "c776643ca3009b75b8bd7fbec3d6826831987b85e2d6ed3767d83ae1aff14895",
-    "AI/domains.txt": "6c0698bea038be357434cf02cf392b8492dd57b5e3370c39f0046a5c06352ff3",
+    "AI/domains.json": "51a73e33dcd5a6f3bab43e90a348b14d23c2724c63565666c567daf050070135",
+    "AI/domains.srs": "162a987a71d1b9e985f839e5f1a56db57210fde25cbac6e834192bb7ab13a465",
+    "AI/domains.txt": "ee72151dee8c226ef9e7e2d9d179b26113cf47c6a561abcc293e9b61e808deea",
     "AI/ip-extended.json": "f760c13e3632b8058e73613be2a9a8b5be274502381266befc71228006a046fa",
     "AI/ip-extended.srs": "5e2019903a6072f427272766ee38d4f7a039d85d81e72d1f0df5b7d75b83a5c0",
     "AI/ip-extended.txt": "a9720d9251dd26f7a2b90c7ac15caeac43b03500d37c81f0c41342620376ef02",
@@ -175,8 +175,8 @@
     "AI": {
       "normalization": {
         "domains": {
-          "output_entries": 113,
-          "unique_input_entries": 432
+          "output_entries": 118,
+          "unique_input_entries": 437
         },
         "domains-exact": {
           "output_entries": 0,
@@ -209,7 +209,8 @@
       },
       "sources": [
         "ai-iplist",
-        "gemini-iplist"
+        "gemini-iplist",
+        "gemini-mobile-local"
       ]
     },
     "Apple": {
@@ -595,7 +596,7 @@
   },
   "files": {
     "AI/bundle.json": {
-      "entries": 113,
+      "entries": 118,
       "ipv4_addresses": 0,
       "ipv6_addresses": 0
     },
@@ -603,7 +604,7 @@
       "entries": 0
     },
     "AI/domains.json": {
-      "entries": 113
+      "entries": 118
     },
     "AI/ip-extended.json": {
       "entries": 588,
@@ -1673,6 +1674,23 @@
         }
       },
       "sha256": "fcb65cd42e212403a789dc8ee70579d27b7ff9478b47dacf1fba4811d17ce9c5"
+    },
+    "gemini-mobile-local": {
+      "broad_domains": {},
+      "counts": {
+        "domains": 5,
+        "domains-exact": 0,
+        "ipv4": 0,
+        "ipv4-extended": 0,
+        "ipv4-observed": 0,
+        "ipv6": 0,
+        "ipv6-extended": 0,
+        "ipv6-observed": 0
+      },
+      "excluded": {},
+      "location": "data/gemini-mobile-domains.txt",
+      "portals": {},
+      "sha256": "85d15fc7dd039296d6cf92639032a66dc54289a6392e82501971f051505f53f5"
     },
     "github-iplist": {
       "broad_domains": {
