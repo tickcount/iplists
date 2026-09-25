@@ -112,20 +112,20 @@
     "Twitch/ip.json": "5252917abcaa448a869eac602a3a69c486ced63312fcd3b40b8fd9c78030f419",
     "Twitch/ip.srs": "9ebf81c5f672e3ba09529c044ab20b5e1e89e825db279cc262a5d056d5e34537",
     "Twitch/ip.txt": "2303b59418838494e0971e98c6c5905dcdde3889c7c8d37b8a685afb84ef1439",
-    "YouTube/bundle.json": "0ed504b4728c9a49ece824b6f1487851074df5c51f0d12277e39b0b7ea7fdce7",
-    "YouTube/bundle.srs": "64d417c49f0bdeeedf89502aa2d10e12da179d8ffdb854a5c2f0c2af217c0184",
+    "YouTube/bundle.json": "1a2cc6372c13afe277648d29a1d16e785c3067e3886411c1c12b7cb2d9f295e0",
+    "YouTube/bundle.srs": "d9d47905b9cca6ab09cbcda9471789bce4e20c3968e948aa675a47a44361db10",
     "YouTube/domains-exact.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
     "YouTube/domains-exact.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
     "YouTube/domains-exact.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "YouTube/domains.json": "a0200a17780e571ace612338d40e53c133d7453d84f35ac5c7a28ad61a8034f7",
-    "YouTube/domains.srs": "cb01512625b2e34b9dc0696870532bdf317fae4203ffd09fb705624a0bc364bc",
-    "YouTube/domains.txt": "7a62314a997878bd5d7c62a92f577cdab95502a5e1828a9bfb28dcb2fecab4c7",
-    "YouTube/ip-extended.json": "26304f2d3fc58740d832f5faf9efa8b20bb371fee86d6b7b3ca82c3d0a9464d0",
-    "YouTube/ip-extended.srs": "4121675866f84cb640dcd47a6c494411d3d0d3c8b29479af4f9063a968330732",
-    "YouTube/ip-extended.txt": "d755ebe2ba94aeb6f023c54dd60dc900e0d1544b3035a800b48430b8cc5183c6",
-    "YouTube/ip.json": "72f7d7abe9cf1566aac49e8b50c9f7ce6f2842c09fe81ad74b9391d171181134",
-    "YouTube/ip.srs": "70c58d8c1fba315e12676712356d69e34440f91b41c7aa28db986b1bbbf3bbdd",
-    "YouTube/ip.txt": "b099ffa0fe24ee96ec0729a546297499d8d6f9474afd8fc458e0d00290fcf026"
+    "YouTube/domains.json": "0d2b7f12bad8f16d47e67ef84c6459d335946f34480407239b270796c966f716",
+    "YouTube/domains.srs": "bd7b9adfe3dff1ebebb7a4984e495a8cea964cbe4143c69e4d5ec9d68b14356e",
+    "YouTube/domains.txt": "1c1a5bccfa896ebe296ec7d1b0a7f24884dc7139a64ae767198d79b2b9b937a3",
+    "YouTube/ip-extended.json": "6020a9f0368428f6f2e8f8098f7761e55f853ebecf5e3875c96c5606af0f1cd2",
+    "YouTube/ip-extended.srs": "b36c21943daea2c4318f93ec66442463d96fde7e458edefa4e38da11619790bd",
+    "YouTube/ip-extended.txt": "735e495a8ee9e585a23285fc757fa0041963fffd553700a723d34a53815c40f6",
+    "YouTube/ip.json": "189dc88da149f8fea993fdf749369e7b9acfea4221d585966ae2f5aea0549f46",
+    "YouTube/ip.srs": "9d52e750a82ffe3378f925ffa9a08071cf6e98f7e32ecb7c64fcf131a933aa0b",
+    "YouTube/ip.txt": "2a42875bff45b767ddaba9f17e5d2fcff40991ddfde21acf28ba91d2a8466d05"
   },
   "categories": {
     "AI": {
@@ -388,24 +388,24 @@
     "YouTube": {
       "normalization": {
         "domains": {
-          "output_entries": 189,
-          "unique_input_entries": 15316
+          "output_entries": 190,
+          "unique_input_entries": 15319
         },
         "domains-exact": {
           "output_entries": 0,
           "unique_input_entries": 0
         },
         "ipv4": {
-          "output_entries": 16927,
-          "unique_input_entries": 22729
+          "output_entries": 16932,
+          "unique_input_entries": 22734
         },
         "ipv4-extended": {
-          "output_entries": 793,
-          "unique_input_entries": 797
+          "output_entries": 798,
+          "unique_input_entries": 802
         },
         "ipv6": {
-          "output_entries": 15926,
-          "unique_input_entries": 21431
+          "output_entries": 15931,
+          "unique_input_entries": 21436
         },
         "ipv6-extended": {
           "output_entries": 366,
@@ -413,7 +413,8 @@
         }
       },
       "sources": [
-        "youtube-iplist"
+        "youtube-iplist",
+        "revanced-iplist"
       ]
     }
   },
@@ -636,29 +637,29 @@
       "ipv6_entries": 266678
     },
     "YouTube/bundle.json": {
-      "entries": 33042,
-      "ipv4_addresses": 22729,
-      "ipv6_addresses": 21431
+      "entries": 33053,
+      "ipv4_addresses": 22734,
+      "ipv6_addresses": 21436
     },
     "YouTube/domains-exact.json": {
       "entries": 0
     },
     "YouTube/domains.json": {
-      "entries": 189
+      "entries": 190
     },
     "YouTube/ip-extended.json": {
-      "entries": 1159,
-      "ipv4_addresses": 673566340,
-      "ipv4_entries": 793,
+      "entries": 1164,
+      "ipv4_addresses": 673566345,
+      "ipv4_entries": 798,
       "ipv6_addresses": 556296741027000511863478879780864,
       "ipv6_entries": 366
     },
     "YouTube/ip.json": {
-      "entries": 32853,
-      "ipv4_addresses": 22729,
-      "ipv4_entries": 16927,
-      "ipv6_addresses": 21431,
-      "ipv6_entries": 15926
+      "entries": 32863,
+      "ipv4_addresses": 22734,
+      "ipv4_entries": 16932,
+      "ipv6_addresses": 21436,
+      "ipv6_entries": 15931
     }
   },
   "github_verification": {
@@ -786,7 +787,7 @@
       "AI/RKNAsnBlock": 43988,
       "AI/Telegram": 132,
       "AI/Twitch": 2853,
-      "AI/YouTube": 634,
+      "AI/YouTube": 636,
       "Apple/Discord": 44,
       "Apple/GitHub": 4,
       "Apple/Microsoft": 10413,
@@ -798,19 +799,20 @@
       "Discord/RKNAsnBlock": 597,
       "Discord/Telegram": 6,
       "Discord/Twitch": 216,
-      "Discord/YouTube": 18,
+      "Discord/YouTube": 20,
       "GitHub/Microsoft": 9893,
       "GitHub/RKNAsnBlock": 13461,
       "GitHub/Telegram": 4,
       "Microsoft/RKNAsnBlock": 28963,
       "Microsoft/Telegram": 17,
       "Microsoft/Twitch": 2599,
-      "Microsoft/YouTube": 14,
+      "Microsoft/YouTube": 16,
       "RKNAsnBlock/Telegram": 250,
       "RKNAsnBlock/Twitch": 55980,
-      "RKNAsnBlock/YouTube": 1400,
+      "RKNAsnBlock/YouTube": 1405,
       "Telegram/Twitch": 86,
-      "Twitch/YouTube": 14
+      "Telegram/YouTube": 2,
+      "Twitch/YouTube": 16
     },
     "ipv4-extended": {
       "AI/Apple": 27392810,
@@ -819,7 +821,7 @@
       "AI/Microsoft": 43040283,
       "AI/Telegram": 6162976,
       "AI/Twitch": 23960184,
-      "AI/YouTube": 2968603,
+      "AI/YouTube": 2968605,
       "Apple/Discord": 6551187,
       "Apple/GitHub": 851972,
       "Apple/Microsoft": 609934454,
@@ -830,16 +832,16 @@
       "Discord/Microsoft": 5456966,
       "Discord/Telegram": 4130863,
       "Discord/Twitch": 12067876,
-      "Discord/YouTube": 309560,
+      "Discord/YouTube": 309565,
       "GitHub/Microsoft": 30674968,
       "GitHub/Telegram": 6,
       "GitHub/Twitch": 851968,
       "Microsoft/Telegram": 5701897,
       "Microsoft/Twitch": 25813710,
-      "Microsoft/YouTube": 51699210,
+      "Microsoft/YouTube": 51699213,
       "Telegram/Twitch": 7078178,
-      "Telegram/YouTube": 198681,
-      "Twitch/YouTube": 20274184
+      "Telegram/YouTube": 198683,
+      "Twitch/YouTube": 20274189
     },
     "ipv6": {
       "AI/Apple": 724,
@@ -849,7 +851,7 @@
       "AI/RKNAsnBlock": 21466,
       "AI/Telegram": 97,
       "AI/Twitch": 395,
-      "AI/YouTube": 584,
+      "AI/YouTube": 586,
       "Apple/Discord": 6,
       "Apple/Microsoft": 6835,
       "Apple/RKNAsnBlock": 76002,
@@ -859,19 +861,20 @@
       "Discord/RKNAsnBlock": 188,
       "Discord/Telegram": 4,
       "Discord/Twitch": 35,
-      "Discord/YouTube": 20,
+      "Discord/YouTube": 22,
       "GitHub/Microsoft": 81,
       "GitHub/RKNAsnBlock": 1,
       "GitHub/Telegram": 4,
       "Microsoft/RKNAsnBlock": 22100,
       "Microsoft/Telegram": 6,
       "Microsoft/Twitch": 1055,
-      "Microsoft/YouTube": 16,
+      "Microsoft/YouTube": 18,
       "RKNAsnBlock/Telegram": 2543,
       "RKNAsnBlock/Twitch": 266545,
-      "RKNAsnBlock/YouTube": 1397,
+      "RKNAsnBlock/YouTube": 1402,
       "Telegram/Twitch": 2,
-      "Twitch/YouTube": 14
+      "Telegram/YouTube": 2,
+      "Twitch/YouTube": 16
     },
     "ipv6-extended": {
       "AI/Apple": 43337809731042764610332658761728,
@@ -1588,6 +1591,29 @@
         }
       },
       "sha256": "7233e4fe9613ce5677e825a947bb43de5eb617fcfd7b4f721e7697b5f5f5534a"
+    },
+    "revanced-iplist": {
+      "broad_domains": {},
+      "counts": {
+        "domains": 3,
+        "domains-exact": 0,
+        "ipv4": 5,
+        "ipv4-extended": 5,
+        "ipv6": 5,
+        "ipv6-extended": 2
+      },
+      "excluded": {},
+      "location": "https://iplist.opencck.org/?format=json&site=revanced.app",
+      "portals": {
+        "revanced.app": {
+          "cidr4": 4,
+          "cidr6": 2,
+          "domains": 3,
+          "ip4": 5,
+          "ip6": 5
+        }
+      },
+      "sha256": "dd4ebd31f252fb4ef0ff420fa510ba713a7023d6d8bf616150a58d05247137f8"
     },
     "rkn-asns": {
       "asns": {

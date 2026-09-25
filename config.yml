@@ -130,6 +130,10 @@ sources:
     sites: [youtube.com]
     allow_broad_domains:
       withyoutube.com: Existing YouTube portal includes this hosted content namespace
+  revanced-iplist:
+    type: iplist
+    url: https://iplist.opencck.org/
+    sites: [revanced.app]
   apple-iplist:
     type: iplist
     url: https://beta.iplist.opencck.org/
@@ -213,7 +217,7 @@ categories:
   Telegram:
     sources: [telegram-iplist, telegram-official, telegram-domains, telegram-community-v4, telegram-community-v6]
   YouTube:
-    sources: [youtube-iplist]
+    sources: [youtube-iplist, revanced-iplist]
   Apple:
     sources: [apple-iplist]
   Microsoft:

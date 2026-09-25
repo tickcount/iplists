@@ -2,7 +2,7 @@
 
 Domain and IP rule sets for sing-box, collected from public sources. The compiler validates inputs, removes duplicates, collapses networks without expanding coverage, and exports JSON, SRS and plain text. GitHub Actions is configured to update the lists every six hours.
 
-Categories: **AI (including Gemini), Discord, Telegram, YouTube, Apple, Microsoft, Twitch, GitHub, RKNAsnBlock**.
+Categories: **AI (including Gemini), Discord, Telegram, YouTube (including ReVanced), Apple, Microsoft, Twitch, GitHub, RKNAsnBlock**.
 
 ## Use the lists
 
