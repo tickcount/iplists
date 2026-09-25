@@ -1,3 +1,8 @@
-dist/
 __pycache__/
 *.pyc
+.DS_Store
+.venv/
+.cache/
+.rules.lock
+.rules-build-*/
+.rules-previous-*/

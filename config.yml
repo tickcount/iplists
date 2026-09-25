@@ -1,30 +1,226 @@
+version: 2
+
+# Fail closed if an existing output loses >50% or gains >100% of entries
+# or address coverage. Review the diff before --allow-large-changes.
+limits:
+  max_drop_fraction: 0.5
+  max_growth_fraction: 1.0
+
+# Reviewed snapshot, including ICANN and private hosting boundaries.
+domain_policy:
+  public_suffix_file: data/public_suffix_list.dat
+  shared_suffixes:
+    amazonaws.com: Shared AWS service parent
+    s3.amazonaws.com: Shared S3 bucket namespace
+    windows.net: Shared Microsoft cloud namespace
+    blob.core.windows.net: Shared Azure Blob account namespace
+    cloudfront.net: Shared CloudFront distribution namespace
+    azureedge.net: Shared Azure CDN namespace
+    akamaized.net: Shared Akamai CDN namespace
+    fastly.net: Shared Fastly hosting namespace
+    googleapis.com: Shared Google API namespace
+    googleusercontent.com: Shared Google content namespace
+
+github_verification:
+  category: GitHub
+  fields: [web, api, git, packages, pages, copilot]
+
+sources:
+  github-iplist:
+    type: iplist
+    url: https://beta.iplist.opencck.org/
+    sites: [github.com]
+    # Tenant hostnames match exactly, without including arbitrary subdomains.
+    exact_domain_suffixes: [blob.core.windows.net, s3.amazonaws.com]
+    allow_broad_domains:
+      github.io: GitHub Pages is explicitly part of this service category, including hosted sites
+      githubpreview.dev: GitHub development previews are part of this category
+      githubusercontent.com: GitHub user content is part of this category
+    exclude_domains:
+      'blob.core.windows.net': Shared Azure Blob parent; retain individually listed GitHub storage hosts
+  rkn-asns:
+    type: asn
+    file: data/rkn-asns.txt
+    min_peers_seeing: 10
+    workers: 4
+    # An explicitly selected broad ASN policy, unlike service-specific core IPs.
+    profile: core
+  ai-iplist:
+    type: iplist
+    url: https://iplist.opencck.org/
+    allow_broad_domains:
+      claude.app: Claude hosted applications are included in the existing AI scope
+      claudeusercontent.com: Claude user content is included in the existing AI scope
+      files.oaiusercontent.com: ChatGPT file content is included in the existing AI scope
+    sites:
+      - chatgpt.com
+      - aistudio.google.com
+      - canva.com
+      - claude.ai
+      - copilot
+      - deepl.com
+      - elevenlabs.io
+      - grammarly.com
+      - grok.com
+      - kilo.ai
+      - perplexity.ai
+      - pollo.ai
+  gemini-iplist:
+    type: iplist
+    url: https://beta.iplist.opencck.org/
+    sites: [google@gemini, google@google-gemini]
+
+  discord-iplist:
+    type: iplist
+    url: https://iplist.opencck.org/
+    sites: [discord.com, discord.gg, discord.media]
+    # Keep the curated domain list; do not add thousands of discovered hosts.
+    fields: [ip4, ip6, cidr4, cidr6]
+  discord-domains:
+    type: text
+    data: domains
+    allow_broad_domains:
+      discordsays.com: Discord embedded applications are included in the curated service list
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/discord.lst
+  discord-local:
+    type: text
+    data: domains
+    allow_broad_domains:
+      discordsays.com: Discord embedded applications are included in the local service list
+    file: data/discord-domains.txt
+  discord-community-v4:
+    type: text
+    data: ipv4
+    profile: extended
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/Discord.lst
+  discord-community-v6:
+    type: text
+    data: ipv6
+    profile: extended
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv6/Discord.lst
+
+  telegram-iplist:
+    type: iplist
+    url: https://iplist.opencck.org/
+    sites: [telegram.org]
+    fields: [ip4, ip6, cidr4, cidr6]
+  telegram-official:
+    type: text
+    data: networks
+    profile: core
+    url: https://core.telegram.org/resources/cidr.txt
+  telegram-domains:
+    type: text
+    data: domains
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/telegram.lst
+  telegram-community-v4:
+    type: text
+    data: ipv4
+    profile: extended
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/telegram.lst
+  telegram-community-v6:
+    type: text
+    data: ipv6
+    profile: extended
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv6/telegram.lst
+
+  youtube-iplist:
+    type: iplist
+    url: https://iplist.opencck.org/
+    sites: [youtube.com]
+    allow_broad_domains:
+      withyoutube.com: Existing YouTube portal includes this hosted content namespace
+  apple-iplist:
+    type: iplist
+    url: https://beta.iplist.opencck.org/
+    groups: [apple]
+    expected_sites:
+      - apple.com
+      - apple@appstore.com
+      - apple@device
+      - apple@icloud.com
+      - apple@itunes.com
+      - apple@metrics
+      - apple@opensource
+      - apple@other
+      - apple@shazam.com
+      - apple@tech
+    # Exact upstream errors observed 2026-09-25. Never skip arbitrary bad lines.
+    exclude_domains:
+      'mailto': URI scheme extracted as a domain
+      'requests': Non-domain word in upstream data
+      'seconds': Non-domain word in upstream data
+      'ussea4-dns-001': Single-label internal hostname
+      'geoffk@apple.com': Email address, not a domain
+      'mattmartin@apple.com': Email address, not a domain
+      '?.apple.com': Invalid wildcard
+      'Ã¢Â storeqa1.corp.apple.com': Corrupted text with whitespace
+      'Ã¢Â gsxappld.apple.com': Corrupted text with whitespace
+      'Ã¢Â salesdownloadit.corp.apple.com': Corrupted text with whitespace
+  microsoft-iplist:
+    type: iplist
+    url: https://beta.iplist.opencck.org/
+    groups: [microsoft]
+    # The requested whole Microsoft group intentionally includes Azure tenants.
+    allow_broad_domains:
+      azure-mobile.net: Existing Azure mobile service namespace within the full Microsoft group
+      azureedge.net: Existing Azure CDN namespace within the full Microsoft group
+      azurefd.net: Existing Azure Front Door namespace within the full Microsoft group
+      azurewebsites.net: Existing Azure App Service tenants within the full Microsoft group
+      cloudapp.net: Existing Azure cloud applications within the full Microsoft group
+      trafficmanager.net: Existing Azure Traffic Manager namespace within the full Microsoft group
+      windows.net: Existing Microsoft cloud namespace within the full Microsoft group
+      github.io: Existing Microsoft development portal includes GitHub Pages
+      githubpreview.dev: Existing Microsoft development portal includes GitHub previews
+      githubusercontent.com: Existing Microsoft development portal includes GitHub content
+    expected_sites:
+      - microsoft.com
+      - microsoft@azure
+      - microsoft@bing.com
+      - microsoft@dev
+      - microsoft@mojang.com
+      - microsoft@msn.com
+      - microsoft@npmjs.com
+      - microsoft@onedrive.live.com
+      - microsoft@pki
+      - microsoft@windowsupdate
+      - microsoft@xbox.com
+      - visualstudio.com
+    exclude_domains:
+      'bingads.com @ads': Upstream annotation embedded in domain
+  twitch-iplist:
+    type: iplist
+    url: https://beta.iplist.opencck.org/
+    groups: [twitch]
+    exact_domains:
+      - ec2-44-199-180-251.compute-1.amazonaws.com
+      - ec2-44-215-133-70.compute-1.amazonaws.com
+      - ec2-98-82-158-241.compute-1.amazonaws.com
+    expected_sites:
+      - twitch.tv
+      - twitch@7tv.app
+      - twitch@amazonaws.com
+      - twitch@cloudfront.net
+      - twitch@ext-twitch.tv
+      - twitch@live-video.net
+      - twitch@ttvnw.net
+
 categories:
-  discord:
-    sources:
-      # domains
-      - url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/discord.lst
-        # todo: inf: contains useless domains, investigate/filter & optimize
-      # - url: https://iplist.opencck.org/?format=text&data=domains&site=discord.com&site=discord.gg&site=discord.media
-      # cidr
-      - url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/Discord.lst
-      - url: https://iplist.opencck.org/?format=text&data=cidr4&site=discord.com&site=discord.gg&site=discord.media
-      - url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv6/Discord.lst
-      - url: https://iplist.opencck.org/?format=text&data=cidr6&site=discord.com&site=discord.gg&site=discord.media
-  telegram:
-    sources:
-      # domains
-      - url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/telegram.lst
-      # todo: inf: contains useless domains, investigate/filter & optimize
-      # - url: https://iplist.opencck.org/?format=text&data=domains&site=telegram.org
-      # cidr
-      - url: https://core.telegram.org/resources/cidr.txt
-      - url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/telegram.lst
-      - url: https://iplist.opencck.org/?format=text&data=cidr4&site=telegram.org
-      - url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv6/telegram.lst
-      - url: https://iplist.opencck.org/?format=text&data=cidr6&site=telegram.org
-  ai:
-    sources:
-      # domains
-      - url: https://iplist.opencck.org/?format=text&data=domains&site=chatgpt.com&site=aistudio.google.com&site=canva.com&site=claude.ai&site=copilot&site=deepl.com&site=elevenlabs.io&site=grammarly.com&site=grok.com&site=kilo.ai&site=perplexity.ai&site=pollo.ai
-      # cidr
-      - url: https://iplist.opencck.org/?format=text&data=cidr4&site=chatgpt.com&site=aistudio.google.com&site=canva.com&site=claude.ai&site=copilot&site=deepl.com&site=elevenlabs.io&site=grammarly.com&site=grok.com&site=kilo.ai&site=perplexity.ai&site=pollo.ai
+  AI:
+    sources: [ai-iplist, gemini-iplist]
+  Discord:
+    sources: [discord-iplist, discord-domains, discord-local, discord-community-v4, discord-community-v6]
+  Telegram:
+    sources: [telegram-iplist, telegram-official, telegram-domains, telegram-community-v4, telegram-community-v6]
+  YouTube:
+    sources: [youtube-iplist]
+  Apple:
+    sources: [apple-iplist]
+  Microsoft:
+    sources: [microsoft-iplist]
+  Twitch:
+    sources: [twitch-iplist]
+  GitHub:
+    sources: [github-iplist]
+  RKNAsnBlock:
+    sources: [rkn-asns]
