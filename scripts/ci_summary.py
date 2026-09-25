@@ -33,14 +33,15 @@ def render(report, outcome):
     files = report.get('files', {})
     categories = sorted({name.split('/')[0] for name in files})
     if categories:
-        lines += ['| Category | Suffixes | Exact names | IPv4 CIDRs | IPv6 CIDRs |',
-                  '|---|---:|---:|---:|---:|']
+        lines += ['| Category | Suffixes | Exact names | Core IPv4 | Core IPv6 | Observed IP entries (optional) |',
+                  '|---|---:|---:|---:|---:|---:|']
         for name in categories[:100]:
             ip = files.get(f'{name}/ip.json', {})
             lines.append('| ' + ' | '.join([cell(name),
                 number(files.get(f'{name}/domains.json', {}).get('entries')),
                 number(files.get(f'{name}/domains-exact.json', {}).get('entries')),
-                number(ip.get('ipv4_entries')), number(ip.get('ipv6_entries'))]) + ' |')
+                number(ip.get('ipv4_entries')), number(ip.get('ipv6_entries')),
+                number(files.get(f'{name}/ip-observed.json', {}).get('entries'))]) + ' |')
         lines += ['']
 
     changes = report.get('changes', {})
@@ -84,9 +85,9 @@ def render(report, outcome):
     verification = report.get('github_verification')
     if verification:
         lines += ['', '### GitHub Meta API comparison', '',
-                  '| Family | Core addresses inside selected official ranges | Outside |', '|---|---:|---:|']
+                  '| Family | Core addresses inside official ranges | Outside | Observed addresses inside | Outside |', '|---|---:|---:|---:|---:|']
         for family, stats in sorted(verification['families'].items()):
-            lines.append(f'| {cell(family)} | {number(stats["core_addresses_in_official"])} | {number(stats["core_addresses_outside_official"])} |')
+            lines.append(f'| {cell(family)} | {number(stats["core_addresses_in_official"])} | {number(stats["core_addresses_outside_official"])} | {number(stats.get("observed_addresses_in_official"))} | {number(stats.get("observed_addresses_outside_official"))} |')
         lines += ['', 'Informational comparison; the official list is not exhaustive.']
     lines += ['', 'Full details: build-report and changes artifacts.']
     output = '\n'.join(lines) + '\n'

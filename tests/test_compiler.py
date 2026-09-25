@@ -73,9 +73,10 @@ class SourceTests(unittest.TestCase):
     def collect(self, rows, source=None):
         return c.collect_source('test', source or self.source, MemoryDownloader(rows), Path('.'))
 
-    def test_core_and_extended_are_separate_and_replace_is_applied(self):
+    def test_observed_and_extended_are_separate_and_replace_is_applied(self):
         data, _ = self.collect({'example.com': portal(replace={'cidr4': {'8.8.8.0/24': ['8.8.8.8/32']}})})
-        self.assertEqual(data['ipv4'], {'8.8.8.8/32'})
+        self.assertEqual(data['ipv4'], set())
+        self.assertEqual(data['ipv4-observed'], {'8.8.8.8/32'})
         self.assertEqual(data['ipv4-extended'], {'8.8.8.8/32'})
         self.assertNotIn('8.8.8.0/24', data['ipv4-extended'])
 
@@ -99,7 +100,7 @@ class SourceTests(unittest.TestCase):
         source = dict(self.source, exclude_domains={'bad @ entry': 'known upstream error'})
         data, report = self.collect({'example.com': portal(domains=['example.com', 'bad @ entry'], ip4=['127.0.0.1', '8.8.8.8'])}, source)
         self.assertEqual(data['domains'], {'example.com'})
-        self.assertEqual(data['ipv4'], {'8.8.8.8/32'})
+        self.assertEqual(data['ipv4-observed'], {'8.8.8.8/32'})
         self.assertIn('bad @ entry', report['excluded'])
         self.assertIn('127.0.0.1', report['excluded'])
         with self.assertRaises(c.BuildError):
@@ -170,7 +171,7 @@ class BuildTests(unittest.TestCase):
         self.build(no_compile=True)
         self.assertEqual(before, self.snapshot())
         self.assertEqual(json.loads((self.output / 'AI/ip.json').read_text())['rules'], [])
-        self.assertEqual(len(list(self.output.glob('AI/*.json'))), 5)
+        self.assertEqual(len(list(self.output.glob('AI/*.json'))), 6)
 
     def test_bundle_contains_core_domains_and_both_ip_families_only(self):
         (self.root / 'ips.txt').write_text('8.8.8.8\n2001:4860:4860::8888\n')
@@ -187,6 +188,30 @@ class BuildTests(unittest.TestCase):
         if os.environ.get('SING_BOX'):
             c.compile_srs(self.output / 'AI/bundle.json', os.environ['SING_BOX'])
             for query, expected in [('example.com', True), ('8.8.8.8', True), ('2001:4860:4860::8888', True), ('8.8.1.1', False), ('unrelated.test', False)]:
+                result = subprocess.run([os.environ['SING_BOX'], 'rule-set', 'match', '--format', 'binary',
+                    str(self.output / 'AI/bundle.srs'), query], check=True, capture_output=True, text=True)
+                self.assertEqual('match rules.' in result.stdout + result.stderr, expected, query)
+
+    def test_observed_hosts_are_exported_but_never_enter_core_or_bundle(self):
+        self.settings['sources']['observed'] = dict(type='iplist', url='https://example.test/', sites=['example.com'])
+        self.settings['categories']['AI']['sources'].append('observed')
+        (self.root / 'official.txt').write_text('9.9.9.0/24\n')
+        self.settings['sources']['official'] = dict(type='text', file='official.txt', data='networks', profile='core')
+        self.settings['categories']['AI']['sources'].append('official')
+        self.save_config()
+        c.build(self.config, self.output, MemoryDownloader({'example.com': portal()}), no_compile=True)
+        bundle = json.loads((self.output / 'AI/bundle.json').read_text())['rules'][0]
+        self.assertEqual(bundle['ip_cidr'], ['9.9.9.0/24'])
+        self.assertEqual(bundle['domain_suffix'], ['example.com'])
+        observed = json.loads((self.output / 'AI/ip-observed.json').read_text())['rules'][0]['ip_cidr']
+        self.assertEqual(observed, ['8.8.8.8/32', '2001:4860:4860::8888/128'])
+        self.assertEqual(json.loads((self.output / 'AI/ip.json').read_text())['rules'][0]['ip_cidr'], ['9.9.9.0/24'])
+        self.assertEqual(json.loads((self.output / 'AI/ip-extended.json').read_text())['rules'][0]['ip_cidr'], ['8.8.8.0/24'])
+        metrics = json.loads((self.output / 'manifest.json').read_text())['files']['AI/ip-observed.json']
+        self.assertEqual((metrics['ipv4_addresses'], metrics['ipv6_addresses']), (1, 1))
+        if os.environ.get('SING_BOX'):
+            c.compile_srs(self.output / 'AI/bundle.json', os.environ['SING_BOX'])
+            for query, expected in [('example.com', True), ('9.9.9.1', True), ('8.8.8.8', False), ('2001:4860:4860::8888', False), ('8.8.1.1', False)]:
                 result = subprocess.run([os.environ['SING_BOX'], 'rule-set', 'match', '--format', 'binary',
                     str(self.output / 'AI/bundle.srs'), query], check=True, capture_output=True, text=True)
                 self.assertEqual('match rules.' in result.stdout + result.stderr, expected, query)
@@ -301,7 +326,7 @@ class BuildTests(unittest.TestCase):
     @unittest.skipUnless(os.environ.get('SING_BOX'), 'Set SING_BOX for real binary integration')
     def test_real_srs_compilation_and_json_only_guard(self):
         self.build(binary=os.environ['SING_BOX'])
-        self.assertEqual(len(list(self.output.glob('AI/*.srs'))), 5)
+        self.assertEqual(len(list(self.output.glob('AI/*.srs'))), 6)
         before = self.snapshot()
         with self.assertRaises(c.BuildError):
             self.build(no_compile=True)

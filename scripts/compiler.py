@@ -32,9 +32,9 @@ else:
 
 ROOT = Path(__file__).resolve().parent.parent
 DOMAIN_FIELDS = ("domains", "domains-exact")
-IP_FIELDS = ("ipv4", "ipv6", "ipv4-extended", "ipv6-extended")
+IP_FIELDS = ("ipv4", "ipv6", "ipv4-observed", "ipv6-observed", "ipv4-extended", "ipv6-extended")
 FIELDS = DOMAIN_FIELDS + IP_FIELDS
-OUTPUT_FIELDS = DOMAIN_FIELDS + ("ip", "ip-extended")
+OUTPUT_FIELDS = DOMAIN_FIELDS + ("ip", "ip-observed", "ip-extended")
 NAME = re.compile(r"[A-Za-z0-9][A-Za-z0-9_-]*\Z")
 LABEL = re.compile(r"[a-z0-9_](?:[a-z0-9_-]*[a-z0-9_])?\Z")
 MAX_BYTES = 64 * 1024 * 1024
@@ -384,7 +384,8 @@ def collect_source(sid, source, downloader, config_dir, policy=None):
                         normalize_network(value, 4 if field == "cidr4" else 6)
                         resolved.extend(string_list(mapping[value], f"{sid}/{site}.replace.{field}") if value in mapping else [value])
                     values = resolved
-                target = {"domains": "domains", "ip4": "ipv4", "ip6": "ipv6",
+                # Observing an address in DNS does not establish exclusive service ownership.
+                target = {"domains": "domains", "ip4": "ipv4-observed", "ip6": "ipv6-observed",
                           "cidr4": "ipv4-extended", "cidr6": "ipv6-extended"}[field]
                 for index, value in enumerate(values, 1):
                     add(value, target, f"{site}/{field}/{index}", field in ("ip4", "ip6"))
@@ -433,7 +434,7 @@ def collect_source(sid, source, downloader, config_dir, policy=None):
 
 def file_metrics(field, values):
     result = {"entries": len(values)}
-    if field in ("ip", "ip-extended"):
+    if field in ("ip", "ip-observed", "ip-extended"):
         parsed = [ipaddress.ip_network(v) for v in values]
         for version in (4, 6):
             family = [n for n in parsed if n.version == version]
@@ -447,6 +448,7 @@ def file_metrics(field, values):
 def output_values(data):
     return {"domains": data["domains"], "domains-exact": data["domains-exact"],
             "ip": data["ipv4"] + data["ipv6"],
+            "ip-observed": data["ipv4-observed"] + data["ipv6-observed"],
             "ip-extended": data["ipv4-extended"] + data["ipv6-extended"]}
 
 
@@ -556,6 +558,12 @@ def verify_github(settings, normalized, downloader):
             "core_outside_official_sample": comparison["added_cidr_sample"],
             "official_absent_from_core_sample": comparison["removed_cidr_sample"],
         }
+        observed = coverage_delta(official[version], category.get(f"ipv{version}-observed", []), version)
+        result["families"][f"ipv{version}"].update({
+            "observed_addresses_in_official": observed["addresses_retained"],
+            "observed_addresses_outside_official": observed["addresses_added"],
+            "observed_outside_official_sample": observed["added_cidr_sample"],
+        })
     return result
 
 

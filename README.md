@@ -4,7 +4,7 @@ Domain and IP rule sets for sing-box, collected from public sources. The compile
 
 Categories: **AI (including Gemini), Discord, Telegram, YouTube (including ReVanced), Meta, Apple, Microsoft, Twitch, GitHub, RKNAsnBlock**.
 
-**Meta** combines Facebook, Instagram, WhatsApp, Messenger and Meta AI from iplist with the community Meta domain list, including Threads and Oculus. Broad infrastructure ranges remain in `ip-extended`; `bundle` includes domains and core IPs.
+**Meta** combines Facebook, Instagram, WhatsApp, Messenger and Meta AI from iplist with the community Meta domain list, including Threads and Oculus.
 
 ## Use the lists
 
@@ -12,13 +12,16 @@ Files live in `rules/<Category>/`; names are case-sensitive.
 
 | File | Contents |
 |---|---|
-| `bundle.srs` | Domains + core IPv4/IPv6 in one subscription |
+| `bundle.srs` | Domains + explicitly trusted IPv4/IPv6 networks in one compact subscription |
 | `domains.srs` | Domain suffixes |
 | `domains-exact.srs` | Exact domain names, without their subdomains |
-| `ip.srs` | IPv4 + IPv6: observed IPs and explicitly trusted service networks |
+| `ip.srs` | Explicitly trusted networks: currently Telegram's official CIDRs; empty for the other service categories |
+| `ip-observed.srs` | Observed IPv4/IPv6 addresses from iplist, opt-in; may be shared or historical |
 | `ip-extended.srs` | Additional broad IPv4/IPv6 infrastructure ranges, opt-in |
 
-Every SRS has a `.json` equivalent. Individual lists also have `.txt` exports; there is no `bundle.txt`. Bundles include both domain modes and core IPs; extended ranges are excluded. Use both domain files for complete domain-only coverage. The former `ipv4.*`/`ipv6.*` files are replaced by `ip.*` (likewise for extended lists).
+Every SRS has a `.json` equivalent. Individual lists also have `.txt` exports; there is no `bundle.txt`. Bundles include both domain modes and core IPs; observed addresses and extended ranges are excluded. RKNAsnBlock is an explicit exception: its `ip.srs` and bundle contain the selected ASN networks. Use both domain files for complete domain-only coverage. IPv4 and IPv6 remain combined in each IP file.
+
+On Tachyon, enable **Include IP addresses and subnets** for Telegram and RKNAsnBlock. The other service bundles currently contain domains only. Preserve Discord's port-specific voice rules separately; a domain list cannot cover all voice traffic. Switching from the former bundles deliberately removes bulk IP matching: use `ip-observed.srs` only if a client requires it.
 
 For example, merge this fragment into your sing-box config and replace `proxy` with your outbound tag:
 
@@ -37,7 +40,7 @@ For example, merge this fragment into your sing-box config and replace `proxy` w
 }
 ```
 
-Replace `AI` with another category, or choose a specific file such as `GitHub/domains-exact.srs` or `Telegram/ip.txt`. IP lists may include shared or historical addresses; domain rules usually provide more precise service selection.
+Replace `AI` with another category, or choose a specific file such as `GitHub/domains-exact.srs` or `Telegram/ip.txt`. DNS observations are not proof of exclusive IP ownership; domain rules usually provide more precise service selection.
 
 ## RKNAsnBlock
 

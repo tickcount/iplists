@@ -1,7 +1,7 @@
 {
   "artifacts": {
-    "AI/bundle.json": "5bc10f30307111113103623de8555db4a3a87c6cd0635cdac43381b7bbcfcc49",
-    "AI/bundle.srs": "5536fd90d24ad4e377fce45ab51ba4507020ed3b3cc8a1f709ae5feff45b5601",
+    "AI/bundle.json": "158f7e56e5db573b0e1820cf60becc657d9bcb66cae40808ac7692caf0a886ba",
+    "AI/bundle.srs": "c776643ca3009b75b8bd7fbec3d6826831987b85e2d6ed3767d83ae1aff14895",
     "AI/domains-exact.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
     "AI/domains-exact.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
     "AI/domains-exact.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -11,11 +11,14 @@
     "AI/ip-extended.json": "f760c13e3632b8058e73613be2a9a8b5be274502381266befc71228006a046fa",
     "AI/ip-extended.srs": "5e2019903a6072f427272766ee38d4f7a039d85d81e72d1f0df5b7d75b83a5c0",
     "AI/ip-extended.txt": "a9720d9251dd26f7a2b90c7ac15caeac43b03500d37c81f0c41342620376ef02",
-    "AI/ip.json": "25d64a3cc58fffc00e299b324207318ff93fc4d7ab106899fc7359ada1d743d9",
-    "AI/ip.srs": "62614e386b81a127f971de25ee4cbf40884fd84746ab2928c43d9c6cd7c18ae9",
-    "AI/ip.txt": "f1f1c664b3f3a238355b1084f122a6bd89e8dc66973928ba66f25765be9d7881",
-    "Apple/bundle.json": "f4c7ae1b8921e656bf52e2df94ad5a239503f7d2816363e8a743c6a535afcf12",
-    "Apple/bundle.srs": "d90413c6979d01ae0ed7f2791418d731b4a820df92d37b84aa6aa87c48b2c46b",
+    "AI/ip-observed.json": "25d64a3cc58fffc00e299b324207318ff93fc4d7ab106899fc7359ada1d743d9",
+    "AI/ip-observed.srs": "62614e386b81a127f971de25ee4cbf40884fd84746ab2928c43d9c6cd7c18ae9",
+    "AI/ip-observed.txt": "f1f1c664b3f3a238355b1084f122a6bd89e8dc66973928ba66f25765be9d7881",
+    "AI/ip.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
+    "AI/ip.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
+    "AI/ip.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Apple/bundle.json": "1e772921951d0e4719fb8252307abecfa27e2686700fdd3ee393488b10c319a4",
+    "Apple/bundle.srs": "3de1354fe8b992829e82df7593ae268d2d66a9a88a373b724ba6891a95219f88",
     "Apple/domains-exact.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
     "Apple/domains-exact.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
     "Apple/domains-exact.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -25,11 +28,14 @@
     "Apple/ip-extended.json": "6c7d07493b5f4d4f208063bf96e4575ddc86021255db55927a86155d7cdb4c00",
     "Apple/ip-extended.srs": "55684d06bd8a60300a383f24f094e8556f23d594bce85382dc652412404bcfd7",
     "Apple/ip-extended.txt": "ce7cee58828c94a379f9e6069fb4df7a3f64b66bb66b4a460927f2f200013c9a",
-    "Apple/ip.json": "8a6de089c022a25ebcb2ab87d1182c78ab167cf8abb4a985eed7717c612a7470",
-    "Apple/ip.srs": "154c4dbd94b837b8ba93ab1e8349285df0ee5615e2fac83dec174373d56cf8b5",
-    "Apple/ip.txt": "f176e3be2969c1d8d71ce18faed45a000d3a54b561a369cb11e2ece6a07d073e",
-    "Discord/bundle.json": "e756891d0880500380fd58b47fb624556fea0e3e976b22b5ace58d68d4be81d7",
-    "Discord/bundle.srs": "44c8396e8561359abf39f13418af77e92fae9b4d5eff79906d0701a03ea866f2",
+    "Apple/ip-observed.json": "8a6de089c022a25ebcb2ab87d1182c78ab167cf8abb4a985eed7717c612a7470",
+    "Apple/ip-observed.srs": "154c4dbd94b837b8ba93ab1e8349285df0ee5615e2fac83dec174373d56cf8b5",
+    "Apple/ip-observed.txt": "f176e3be2969c1d8d71ce18faed45a000d3a54b561a369cb11e2ece6a07d073e",
+    "Apple/ip.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
+    "Apple/ip.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
+    "Apple/ip.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Discord/bundle.json": "cd541796f5016cadf137f954d7cf069c6a9b22e314c616801454e8907208a1f9",
+    "Discord/bundle.srs": "0b5a88f5ebdde0568e2ffef1edbc47ee6915dc3156d8682970f7bf438388bb2d",
     "Discord/domains-exact.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
     "Discord/domains-exact.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
     "Discord/domains-exact.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -39,11 +45,14 @@
     "Discord/ip-extended.json": "6103d8226808f82cc61bf296bcd1da8636c1644e1ab8960ac5c452657101f1de",
     "Discord/ip-extended.srs": "53a967b27b77d6c83d1fa080b429b1aa4f35756d594113057e606f961c44e5e9",
     "Discord/ip-extended.txt": "93954182855ea2f0356b1070cdc4b8c4d00f938e4f046e0a95cb2bdd93002a1d",
-    "Discord/ip.json": "9c2591337c237d2c04fb26af59777e68b0ffda171f26c412bf3628750203e95d",
-    "Discord/ip.srs": "2244a585641ce9c00bd2fd22d5fa74b6f3ad7f5702f4dcb72c9b6ee062032076",
-    "Discord/ip.txt": "51c0baed2bd3c8ad849af41b2e04d568f2db0b3ef457b86d458308d6e585e60a",
-    "GitHub/bundle.json": "5fef5e502257a8ffab63f8a56e18d18960a499777fada3a1962c0534f04ba8e1",
-    "GitHub/bundle.srs": "7a69068cfc12700d6f954be7ffa6d04bc1b4f3e6e80f08f3b85afbdadf0932a9",
+    "Discord/ip-observed.json": "9c2591337c237d2c04fb26af59777e68b0ffda171f26c412bf3628750203e95d",
+    "Discord/ip-observed.srs": "2244a585641ce9c00bd2fd22d5fa74b6f3ad7f5702f4dcb72c9b6ee062032076",
+    "Discord/ip-observed.txt": "51c0baed2bd3c8ad849af41b2e04d568f2db0b3ef457b86d458308d6e585e60a",
+    "Discord/ip.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
+    "Discord/ip.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
+    "Discord/ip.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "GitHub/bundle.json": "b5a8d566eee4ca8875a9ce279bda2749e586b4f0870e170a9bcdbfbffc094ca7",
+    "GitHub/bundle.srs": "af3ae9e0f95b6fa21f7d32fde1717514bc4a26fdc6f7c7860d31684d4d82bf9d",
     "GitHub/domains-exact.json": "ff3a95d829216dd93768ce1636dab4217614c5da0fe6e8ac5b0c4a33fa8ca709",
     "GitHub/domains-exact.srs": "37c57eb7948954e92e67e43563f169465252d530aa2c1c9dfe37ab3a2433e942",
     "GitHub/domains-exact.txt": "cf7c0052038199d825d4a0800da138cc0f4055c564c120b6d55b58387ba8ae67",
@@ -53,11 +62,14 @@
     "GitHub/ip-extended.json": "7b1c17c9451d56d1fa8d3cdb3a6210adb6337e596010f5a982b7e371500ee09d",
     "GitHub/ip-extended.srs": "96bd9ebc2e191132a58a0de2e91428b2c2761cfe3285281bfc590325fef42b43",
     "GitHub/ip-extended.txt": "0a207681dc451365834719430e61a6b12c687d7ff603e4d18b5f72f64b332dbf",
-    "GitHub/ip.json": "969a0208e37dfc5f474e344582d10bc46283c052f934770a6e2cdf73bf02f98d",
-    "GitHub/ip.srs": "5a76bb3b8e1db1ad0d849d821ce5b9edf5de4cb4c28de0d13db8503311c38184",
-    "GitHub/ip.txt": "a523a1f2456c8002280dd23235a901f7927f1e3ce2321f8918d36b9db9b5bd79",
-    "Meta/bundle.json": "e39e8e08135d4da4cb0ac8d9a610da378bf22da398ea868f46c2a1f8431fe8b0",
-    "Meta/bundle.srs": "dc08819e4d122ea8a79d32b9ffbf62cd83604232613b1a5f3be8882c60688245",
+    "GitHub/ip-observed.json": "969a0208e37dfc5f474e344582d10bc46283c052f934770a6e2cdf73bf02f98d",
+    "GitHub/ip-observed.srs": "5a76bb3b8e1db1ad0d849d821ce5b9edf5de4cb4c28de0d13db8503311c38184",
+    "GitHub/ip-observed.txt": "a523a1f2456c8002280dd23235a901f7927f1e3ce2321f8918d36b9db9b5bd79",
+    "GitHub/ip.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
+    "GitHub/ip.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
+    "GitHub/ip.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Meta/bundle.json": "516bc113c6ca68bda722749c98b5251ebbd9e436a26fd56c6cca3a1ad91156dc",
+    "Meta/bundle.srs": "e0e6682ecb35b767e631ec0cd933a392cefda61af73490a8f54d57f31570b7e2",
     "Meta/domains-exact.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
     "Meta/domains-exact.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
     "Meta/domains-exact.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -67,11 +79,14 @@
     "Meta/ip-extended.json": "88fc3b65258b63c74c98c7e7c74cb865100f119e5097d05546713d7a693908e6",
     "Meta/ip-extended.srs": "6cd1f1e6de80cb3edcc092cd6f247c611bb32fee23a0890d47c1413658bca278",
     "Meta/ip-extended.txt": "f75ea3c12bf2c4b4a2a3726286831620767e3a364710840f42a61e9546e8314c",
-    "Meta/ip.json": "737a2beacd901fa5dc4b9b9b2a6599d1c93291bd921732fee76b71ac6de859a0",
-    "Meta/ip.srs": "94b6d1f3532f279714ea6b7aab9930a1dd20768901fffdb3fa9dd776db32cee6",
-    "Meta/ip.txt": "f06ac89b83ec4f70589d3f6eb70cdb93f74d828595ded12864e6d885453ec71a",
-    "Microsoft/bundle.json": "32295d48d5b5297af1316a0dde423ec5596f6ae4452f1b47916264c3d11aa607",
-    "Microsoft/bundle.srs": "28b81a281c0b92e658474cbc6c1adf5324dafa9d4401ae032fc882fc7ab101d8",
+    "Meta/ip-observed.json": "737a2beacd901fa5dc4b9b9b2a6599d1c93291bd921732fee76b71ac6de859a0",
+    "Meta/ip-observed.srs": "94b6d1f3532f279714ea6b7aab9930a1dd20768901fffdb3fa9dd776db32cee6",
+    "Meta/ip-observed.txt": "f06ac89b83ec4f70589d3f6eb70cdb93f74d828595ded12864e6d885453ec71a",
+    "Meta/ip.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
+    "Meta/ip.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
+    "Meta/ip.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Microsoft/bundle.json": "07411295d4d8c3faf96aa7dd4966fc46041a04bcf95adb2e980bbb2acbb10e4d",
+    "Microsoft/bundle.srs": "8e23ff2d66be7633029be75e80ee46eba6f86f62f3b14c5803155272709eca44",
     "Microsoft/domains-exact.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
     "Microsoft/domains-exact.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
     "Microsoft/domains-exact.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -81,9 +96,12 @@
     "Microsoft/ip-extended.json": "01ac80788aba9b3540171e768d29c49cc3be2b9a4432f77ad001a04b09e3240d",
     "Microsoft/ip-extended.srs": "3d3f1773c18651aec24cbe2b33fa4108a9a0aefd0c4e9726dbed1b7e7f88a025",
     "Microsoft/ip-extended.txt": "7488403c7b6547fa51267d9c0116592173a7c53359d9d9f1dcb6455f2b7ef66e",
-    "Microsoft/ip.json": "91fa0fe65c762761879745f7fea7cb650565e67c126cf67ad38f0254ea1fbdcb",
-    "Microsoft/ip.srs": "e9a20d73bac60f00171653d5958b5003788b530727e969a19153feb15d76fd1f",
-    "Microsoft/ip.txt": "56ed0ded301ac0b19c011e13f3de7e14134ae92991df4add638d3e173b08035f",
+    "Microsoft/ip-observed.json": "91fa0fe65c762761879745f7fea7cb650565e67c126cf67ad38f0254ea1fbdcb",
+    "Microsoft/ip-observed.srs": "e9a20d73bac60f00171653d5958b5003788b530727e969a19153feb15d76fd1f",
+    "Microsoft/ip-observed.txt": "56ed0ded301ac0b19c011e13f3de7e14134ae92991df4add638d3e173b08035f",
+    "Microsoft/ip.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
+    "Microsoft/ip.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
+    "Microsoft/ip.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "RKNAsnBlock/bundle.json": "b8281a1e20ccd782eaac4946261f0f7893fa6bccd2c1f8bbece4fef3066301a2",
     "RKNAsnBlock/bundle.srs": "ac4f6548a53157fc255742f81dee09b33cde24d96fb9049d4dce930b243ecf4f",
     "RKNAsnBlock/domains-exact.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
@@ -95,11 +113,14 @@
     "RKNAsnBlock/ip-extended.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
     "RKNAsnBlock/ip-extended.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
     "RKNAsnBlock/ip-extended.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "RKNAsnBlock/ip-observed.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
+    "RKNAsnBlock/ip-observed.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
+    "RKNAsnBlock/ip-observed.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "RKNAsnBlock/ip.json": "b8281a1e20ccd782eaac4946261f0f7893fa6bccd2c1f8bbece4fef3066301a2",
     "RKNAsnBlock/ip.srs": "ac4f6548a53157fc255742f81dee09b33cde24d96fb9049d4dce930b243ecf4f",
     "RKNAsnBlock/ip.txt": "9f466031ddf035d32c92357a30807b7c91e930e563d9bbf61a7c1affa2730327",
-    "Telegram/bundle.json": "dc3986834e08e9498e6a7ed22d105700daef35455a70a000aa074e4dc84c7930",
-    "Telegram/bundle.srs": "8d6e29b55588fa70897b752b58397abf131327c9942def566b5ea91feed74140",
+    "Telegram/bundle.json": "4759b34b16e614f1577be8390367b5b46111dc6bb39b271f7a007abda92a835a",
+    "Telegram/bundle.srs": "6ff2773ad4f22fba98b851301abef4578d45e9a9424bc9e3356a429fcf00c2c8",
     "Telegram/domains-exact.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
     "Telegram/domains-exact.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
     "Telegram/domains-exact.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -109,11 +130,14 @@
     "Telegram/ip-extended.json": "93adde0a5103bff93e50c792a072f15c15fdf99ac50145db8a7bf295709e1aa0",
     "Telegram/ip-extended.srs": "ee88b590f6be60b23226fb75f87c917c4ac98a31123c9ac7b791dde9eb09fdfb",
     "Telegram/ip-extended.txt": "28c344a72ac6447b05eed279a6af6424ddc8c805bbfee50c249b660aa9729950",
-    "Telegram/ip.json": "4f120f54046626fa0508486bc86941577e94732472be4b41b9ec0b0853583d61",
-    "Telegram/ip.srs": "b3b5de96b9f1d9bb3f851f49442ec19c8ad962de859ad1e5275dde8b7e06bfa3",
-    "Telegram/ip.txt": "7f144c1a9c728b1d44ab7ab606bcff879f64f0540f2db4d560159d638e419ba1",
-    "Twitch/bundle.json": "7d7e6092a12189d399a37e824444cab36bb66a93211f99acd98b649dca161447",
-    "Twitch/bundle.srs": "17aa9f38bf5bcf7105d3ddcb6fc17e13b9bcad5ffdb364c9924ef35241d6338f",
+    "Telegram/ip-observed.json": "01d6b3e709a51853ffb50813f452ab5bf74d5490144b07331d7819de8d6e62d3",
+    "Telegram/ip-observed.srs": "bf0bb10a2d0a045c7c910c151e991198d5339820094c6e1cb24b989f93327c0e",
+    "Telegram/ip-observed.txt": "6e7540cf3fd0838f07e1a86a6537fa1bee3f07f23cd079df6e9369d2acae23bb",
+    "Telegram/ip.json": "1dff67398f3f71e8a1d1853477eaafdee1523a91d10d0debd627f5b7f4c51580",
+    "Telegram/ip.srs": "95a0011cd94f862f0a4f8ae801d24b153bc632f97c80f73220a704ef09167217",
+    "Telegram/ip.txt": "57c01478a9012450194b43f4c6687b43e61c49e8fe6864db893f625dc1736b32",
+    "Twitch/bundle.json": "b34a2342d886cc93002c3eb9609ec211e8a67202871dfc16494da3d225c00ece",
+    "Twitch/bundle.srs": "c101d949b56d3a883c0e6dbda7cfe6b85cd28fb16a767481fd6860a31edd08d1",
     "Twitch/domains-exact.json": "31fec9f111308b49e790bcb8b1786ab374a57a562e865aa093d85f76a4bb9083",
     "Twitch/domains-exact.srs": "8ff35009f88c6305ca0f8ab499596018efeaff39305e13a7675c8ff62c091b43",
     "Twitch/domains-exact.txt": "deb4760f3c39db62304afced906d702edcbee6702010995dc32965392609d697",
@@ -123,11 +147,14 @@
     "Twitch/ip-extended.json": "78d5761c790344e1fbdab991956d173097f25f19a29f32cbc6122b18825c4eef",
     "Twitch/ip-extended.srs": "8fa21fb11b70328a7f551b4c9a551cd2e5dfbf5f9aa3d778103a4734391b9682",
     "Twitch/ip-extended.txt": "b672ee79ff635547c9f795e49b3f97c6f3f7716dc6bfa4e6cfec56820f2e998c",
-    "Twitch/ip.json": "5252917abcaa448a869eac602a3a69c486ced63312fcd3b40b8fd9c78030f419",
-    "Twitch/ip.srs": "9ebf81c5f672e3ba09529c044ab20b5e1e89e825db279cc262a5d056d5e34537",
-    "Twitch/ip.txt": "2303b59418838494e0971e98c6c5905dcdde3889c7c8d37b8a685afb84ef1439",
-    "YouTube/bundle.json": "1a2cc6372c13afe277648d29a1d16e785c3067e3886411c1c12b7cb2d9f295e0",
-    "YouTube/bundle.srs": "d9d47905b9cca6ab09cbcda9471789bce4e20c3968e948aa675a47a44361db10",
+    "Twitch/ip-observed.json": "5252917abcaa448a869eac602a3a69c486ced63312fcd3b40b8fd9c78030f419",
+    "Twitch/ip-observed.srs": "9ebf81c5f672e3ba09529c044ab20b5e1e89e825db279cc262a5d056d5e34537",
+    "Twitch/ip-observed.txt": "2303b59418838494e0971e98c6c5905dcdde3889c7c8d37b8a685afb84ef1439",
+    "Twitch/ip.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
+    "Twitch/ip.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
+    "Twitch/ip.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "YouTube/bundle.json": "0d2b7f12bad8f16d47e67ef84c6459d335946f34480407239b270796c966f716",
+    "YouTube/bundle.srs": "bd7b9adfe3dff1ebebb7a4984e495a8cea964cbe4143c69e4d5ec9d68b14356e",
     "YouTube/domains-exact.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
     "YouTube/domains-exact.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
     "YouTube/domains-exact.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -137,9 +164,12 @@
     "YouTube/ip-extended.json": "6020a9f0368428f6f2e8f8098f7761e55f853ebecf5e3875c96c5606af0f1cd2",
     "YouTube/ip-extended.srs": "b36c21943daea2c4318f93ec66442463d96fde7e458edefa4e38da11619790bd",
     "YouTube/ip-extended.txt": "735e495a8ee9e585a23285fc757fa0041963fffd553700a723d34a53815c40f6",
-    "YouTube/ip.json": "189dc88da149f8fea993fdf749369e7b9acfea4221d585966ae2f5aea0549f46",
-    "YouTube/ip.srs": "9d52e750a82ffe3378f925ffa9a08071cf6e98f7e32ecb7c64fcf131a933aa0b",
-    "YouTube/ip.txt": "2a42875bff45b767ddaba9f17e5d2fcff40991ddfde21acf28ba91d2a8466d05"
+    "YouTube/ip-observed.json": "189dc88da149f8fea993fdf749369e7b9acfea4221d585966ae2f5aea0549f46",
+    "YouTube/ip-observed.srs": "9d52e750a82ffe3378f925ffa9a08071cf6e98f7e32ecb7c64fcf131a933aa0b",
+    "YouTube/ip-observed.txt": "2a42875bff45b767ddaba9f17e5d2fcff40991ddfde21acf28ba91d2a8466d05",
+    "YouTube/ip.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
+    "YouTube/ip.srs": "7e07ba63e12d8c6877636559e1b5cc810e0d57a83842811b37355b5db7f5985c",
+    "YouTube/ip.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "categories": {
     "AI": {
@@ -153,20 +183,28 @@
           "unique_input_entries": 0
         },
         "ipv4": {
-          "output_entries": 46105,
-          "unique_input_entries": 50218
+          "output_entries": 0,
+          "unique_input_entries": 0
         },
         "ipv4-extended": {
           "output_entries": 560,
           "unique_input_entries": 1262
         },
+        "ipv4-observed": {
+          "output_entries": 46105,
+          "unique_input_entries": 50218
+        },
         "ipv6": {
-          "output_entries": 21193,
-          "unique_input_entries": 22805
+          "output_entries": 0,
+          "unique_input_entries": 0
         },
         "ipv6-extended": {
           "output_entries": 28,
           "unique_input_entries": 29
+        },
+        "ipv6-observed": {
+          "output_entries": 21193,
+          "unique_input_entries": 22805
         }
       },
       "sources": [
@@ -185,20 +223,28 @@
           "unique_input_entries": 0
         },
         "ipv4": {
-          "output_entries": 39890,
-          "unique_input_entries": 73522
+          "output_entries": 0,
+          "unique_input_entries": 0
         },
         "ipv4-extended": {
           "output_entries": 1019,
           "unique_input_entries": 1835
         },
+        "ipv4-observed": {
+          "output_entries": 39890,
+          "unique_input_entries": 73522
+        },
         "ipv6": {
-          "output_entries": 72779,
-          "unique_input_entries": 84076
+          "output_entries": 0,
+          "unique_input_entries": 0
         },
         "ipv6-extended": {
           "output_entries": 45,
           "unique_input_entries": 48
+        },
+        "ipv6-observed": {
+          "output_entries": 72779,
+          "unique_input_entries": 84076
         }
       },
       "sources": [
@@ -216,20 +262,28 @@
           "unique_input_entries": 0
         },
         "ipv4": {
-          "output_entries": 3651,
-          "unique_input_entries": 5416
+          "output_entries": 0,
+          "unique_input_entries": 0
         },
         "ipv4-extended": {
           "output_entries": 84,
           "unique_input_entries": 87
         },
+        "ipv4-observed": {
+          "output_entries": 3651,
+          "unique_input_entries": 5416
+        },
         "ipv6": {
-          "output_entries": 372,
-          "unique_input_entries": 392
+          "output_entries": 0,
+          "unique_input_entries": 0
         },
         "ipv6-extended": {
           "output_entries": 6,
           "unique_input_entries": 6
+        },
+        "ipv6-observed": {
+          "output_entries": 372,
+          "unique_input_entries": 392
         }
       },
       "sources": [
@@ -251,20 +305,28 @@
           "unique_input_entries": 25
         },
         "ipv4": {
-          "output_entries": 13248,
-          "unique_input_entries": 13880
+          "output_entries": 0,
+          "unique_input_entries": 0
         },
         "ipv4-extended": {
           "output_entries": 78,
           "unique_input_entries": 79
         },
+        "ipv4-observed": {
+          "output_entries": 13248,
+          "unique_input_entries": 13880
+        },
         "ipv6": {
-          "output_entries": 99,
-          "unique_input_entries": 103
+          "output_entries": 0,
+          "unique_input_entries": 0
         },
         "ipv6-extended": {
           "output_entries": 4,
           "unique_input_entries": 4
+        },
+        "ipv6-observed": {
+          "output_entries": 99,
+          "unique_input_entries": 103
         }
       },
       "sources": [
@@ -282,20 +344,28 @@
           "unique_input_entries": 0
         },
         "ipv4": {
-          "output_entries": 4816,
-          "unique_input_entries": 5241
+          "output_entries": 0,
+          "unique_input_entries": 0
         },
         "ipv4-extended": {
           "output_entries": 736,
           "unique_input_entries": 814
         },
+        "ipv4-observed": {
+          "output_entries": 4816,
+          "unique_input_entries": 5241
+        },
         "ipv6": {
-          "output_entries": 3700,
-          "unique_input_entries": 3835
+          "output_entries": 0,
+          "unique_input_entries": 0
         },
         "ipv6-extended": {
           "output_entries": 418,
           "unique_input_entries": 455
+        },
+        "ipv6-observed": {
+          "output_entries": 3700,
+          "unique_input_entries": 3835
         }
       },
       "sources": [
@@ -316,20 +386,28 @@
           "unique_input_entries": 0
         },
         "ipv4": {
-          "output_entries": 22339,
-          "unique_input_entries": 31397
+          "output_entries": 0,
+          "unique_input_entries": 0
         },
         "ipv4-extended": {
           "output_entries": 603,
           "unique_input_entries": 1394
         },
+        "ipv4-observed": {
+          "output_entries": 22339,
+          "unique_input_entries": 31397
+        },
         "ipv6": {
-          "output_entries": 19527,
-          "unique_input_entries": 24492
+          "output_entries": 0,
+          "unique_input_entries": 0
         },
         "ipv6-extended": {
           "output_entries": 31,
           "unique_input_entries": 32
+        },
+        "ipv6-observed": {
+          "output_entries": 19527,
+          "unique_input_entries": 24492
         }
       },
       "sources": [
@@ -354,11 +432,19 @@
           "output_entries": 0,
           "unique_input_entries": 0
         },
+        "ipv4-observed": {
+          "output_entries": 0,
+          "unique_input_entries": 0
+        },
         "ipv6": {
           "output_entries": 6219,
           "unique_input_entries": 22967
         },
         "ipv6-extended": {
+          "output_entries": 0,
+          "unique_input_entries": 0
+        },
+        "ipv6-observed": {
           "output_entries": 0,
           "unique_input_entries": 0
         }
@@ -378,20 +464,28 @@
           "unique_input_entries": 0
         },
         "ipv4": {
-          "output_entries": 364,
-          "unique_input_entries": 384
+          "output_entries": 7,
+          "unique_input_entries": 9
         },
         "ipv4-extended": {
           "output_entries": 128,
           "unique_input_entries": 133
         },
+        "ipv4-observed": {
+          "output_entries": 371,
+          "unique_input_entries": 375
+        },
         "ipv6": {
-          "output_entries": 2649,
-          "unique_input_entries": 2653
+          "output_entries": 4,
+          "unique_input_entries": 5
         },
         "ipv6-extended": {
           "output_entries": 12,
           "unique_input_entries": 14
+        },
+        "ipv6-observed": {
+          "output_entries": 2648,
+          "unique_input_entries": 2648
         }
       },
       "sources": [
@@ -413,20 +507,28 @@
           "unique_input_entries": 3
         },
         "ipv4": {
-          "output_entries": 54349,
-          "unique_input_entries": 61584
+          "output_entries": 0,
+          "unique_input_entries": 0
         },
         "ipv4-extended": {
           "output_entries": 498,
           "unique_input_entries": 781
         },
+        "ipv4-observed": {
+          "output_entries": 54349,
+          "unique_input_entries": 61584
+        },
         "ipv6": {
-          "output_entries": 266678,
-          "unique_input_entries": 267193
+          "output_entries": 0,
+          "unique_input_entries": 0
         },
         "ipv6-extended": {
           "output_entries": 21,
           "unique_input_entries": 26
+        },
+        "ipv6-observed": {
+          "output_entries": 266678,
+          "unique_input_entries": 267193
         }
       },
       "sources": [
@@ -444,20 +546,28 @@
           "unique_input_entries": 0
         },
         "ipv4": {
-          "output_entries": 16932,
-          "unique_input_entries": 22734
+          "output_entries": 0,
+          "unique_input_entries": 0
         },
         "ipv4-extended": {
           "output_entries": 798,
           "unique_input_entries": 802
         },
+        "ipv4-observed": {
+          "output_entries": 16932,
+          "unique_input_entries": 22734
+        },
         "ipv6": {
-          "output_entries": 15931,
-          "unique_input_entries": 21436
+          "output_entries": 0,
+          "unique_input_entries": 0
         },
         "ipv6-extended": {
           "output_entries": 366,
           "unique_input_entries": 367
+        },
+        "ipv6-observed": {
+          "output_entries": 15931,
+          "unique_input_entries": 21436
         }
       },
       "sources": [
@@ -485,9 +595,9 @@
   },
   "files": {
     "AI/bundle.json": {
-      "entries": 67411,
-      "ipv4_addresses": 50218,
-      "ipv6_addresses": 22805
+      "entries": 113,
+      "ipv4_addresses": 0,
+      "ipv6_addresses": 0
     },
     "AI/domains-exact.json": {
       "entries": 0
@@ -502,17 +612,24 @@
       "ipv6_addresses": 65692532169383981229090218704896,
       "ipv6_entries": 28
     },
-    "AI/ip.json": {
+    "AI/ip-observed.json": {
       "entries": 67298,
       "ipv4_addresses": 50218,
       "ipv4_entries": 46105,
       "ipv6_addresses": 22805,
       "ipv6_entries": 21193
     },
+    "AI/ip.json": {
+      "entries": 0,
+      "ipv4_addresses": 0,
+      "ipv4_entries": 0,
+      "ipv6_addresses": 0,
+      "ipv6_entries": 0
+    },
     "Apple/bundle.json": {
-      "entries": 114486,
-      "ipv4_addresses": 73522,
-      "ipv6_addresses": 84076
+      "entries": 1817,
+      "ipv4_addresses": 0,
+      "ipv6_addresses": 0
     },
     "Apple/domains-exact.json": {
       "entries": 0
@@ -527,17 +644,24 @@
       "ipv6_addresses": 2319652378067601293361223143784448,
       "ipv6_entries": 45
     },
-    "Apple/ip.json": {
+    "Apple/ip-observed.json": {
       "entries": 112669,
       "ipv4_addresses": 73522,
       "ipv4_entries": 39890,
       "ipv6_addresses": 84076,
       "ipv6_entries": 72779
     },
+    "Apple/ip.json": {
+      "entries": 0,
+      "ipv4_addresses": 0,
+      "ipv4_entries": 0,
+      "ipv6_addresses": 0,
+      "ipv6_entries": 0
+    },
     "Discord/bundle.json": {
-      "entries": 4044,
-      "ipv4_addresses": 5416,
-      "ipv6_addresses": 392
+      "entries": 21,
+      "ipv4_addresses": 0,
+      "ipv6_addresses": 0
     },
     "Discord/domains-exact.json": {
       "entries": 0
@@ -552,17 +676,24 @@
       "ipv6_addresses": 1507830310662707008893928603648,
       "ipv6_entries": 6
     },
-    "Discord/ip.json": {
+    "Discord/ip-observed.json": {
       "entries": 4023,
       "ipv4_addresses": 5416,
       "ipv4_entries": 3651,
       "ipv6_addresses": 392,
       "ipv6_entries": 372
     },
+    "Discord/ip.json": {
+      "entries": 0,
+      "ipv4_addresses": 0,
+      "ipv4_entries": 0,
+      "ipv6_addresses": 0,
+      "ipv6_entries": 0
+    },
     "GitHub/bundle.json": {
-      "entries": 13397,
-      "ipv4_addresses": 13880,
-      "ipv6_addresses": 103
+      "entries": 50,
+      "ipv4_addresses": 0,
+      "ipv6_addresses": 0
     },
     "GitHub/domains-exact.json": {
       "entries": 25
@@ -577,17 +708,24 @@
       "ipv6_addresses": 20366608869136190116707187032064,
       "ipv6_entries": 4
     },
-    "GitHub/ip.json": {
+    "GitHub/ip-observed.json": {
       "entries": 13347,
       "ipv4_addresses": 13880,
       "ipv4_entries": 13248,
       "ipv6_addresses": 103,
       "ipv6_entries": 99
     },
+    "GitHub/ip.json": {
+      "entries": 0,
+      "ipv4_addresses": 0,
+      "ipv4_entries": 0,
+      "ipv6_addresses": 0,
+      "ipv6_entries": 0
+    },
     "Meta/bundle.json": {
-      "entries": 8559,
-      "ipv4_addresses": 5241,
-      "ipv6_addresses": 3835
+      "entries": 43,
+      "ipv4_addresses": 0,
+      "ipv6_addresses": 0
     },
     "Meta/domains-exact.json": {
       "entries": 0
@@ -602,17 +740,24 @@
       "ipv6_addresses": 971240044570763553013153537196032,
       "ipv6_entries": 418
     },
-    "Meta/ip.json": {
+    "Meta/ip-observed.json": {
       "entries": 8516,
       "ipv4_addresses": 5241,
       "ipv4_entries": 4816,
       "ipv6_addresses": 3835,
       "ipv6_entries": 3700
     },
+    "Meta/ip.json": {
+      "entries": 0,
+      "ipv4_addresses": 0,
+      "ipv4_entries": 0,
+      "ipv6_addresses": 0,
+      "ipv6_entries": 0
+    },
     "Microsoft/bundle.json": {
-      "entries": 42464,
-      "ipv4_addresses": 31397,
-      "ipv6_addresses": 24492
+      "entries": 598,
+      "ipv4_addresses": 0,
+      "ipv6_addresses": 0
     },
     "Microsoft/domains-exact.json": {
       "entries": 0
@@ -627,12 +772,19 @@
       "ipv6_addresses": 106962997750818922282373192089600,
       "ipv6_entries": 31
     },
-    "Microsoft/ip.json": {
+    "Microsoft/ip-observed.json": {
       "entries": 41866,
       "ipv4_addresses": 31397,
       "ipv4_entries": 22339,
       "ipv6_addresses": 24492,
       "ipv6_entries": 19527
+    },
+    "Microsoft/ip.json": {
+      "entries": 0,
+      "ipv4_addresses": 0,
+      "ipv4_entries": 0,
+      "ipv6_addresses": 0,
+      "ipv6_entries": 0
     },
     "RKNAsnBlock/bundle.json": {
       "entries": 32517,
@@ -652,6 +804,13 @@
       "ipv6_addresses": 0,
       "ipv6_entries": 0
     },
+    "RKNAsnBlock/ip-observed.json": {
+      "entries": 0,
+      "ipv4_addresses": 0,
+      "ipv4_entries": 0,
+      "ipv6_addresses": 0,
+      "ipv6_entries": 0
+    },
     "RKNAsnBlock/ip.json": {
       "entries": 32517,
       "ipv4_addresses": 351384896,
@@ -660,9 +819,9 @@
       "ipv6_entries": 6219
     },
     "Telegram/bundle.json": {
-      "entries": 3033,
-      "ipv4_addresses": 11366,
-      "ipv6_addresses": 79232998217542796110242777685
+      "entries": 31,
+      "ipv4_addresses": 11008,
+      "ipv6_addresses": 79232998217542796110242775040
     },
     "Telegram/domains-exact.json": {
       "entries": 0
@@ -677,17 +836,24 @@
       "ipv6_addresses": 2933922728883416686322461442048,
       "ipv6_entries": 12
     },
+    "Telegram/ip-observed.json": {
+      "entries": 3019,
+      "ipv4_addresses": 375,
+      "ipv4_entries": 371,
+      "ipv6_addresses": 2648,
+      "ipv6_entries": 2648
+    },
     "Telegram/ip.json": {
-      "entries": 3013,
-      "ipv4_addresses": 11366,
-      "ipv4_entries": 364,
-      "ipv6_addresses": 79232998217542796110242777685,
-      "ipv6_entries": 2649
+      "entries": 11,
+      "ipv4_addresses": 11008,
+      "ipv4_entries": 7,
+      "ipv6_addresses": 79232998217542796110242775040,
+      "ipv6_entries": 4
     },
     "Twitch/bundle.json": {
-      "entries": 321110,
-      "ipv4_addresses": 61584,
-      "ipv6_addresses": 267193
+      "entries": 83,
+      "ipv4_addresses": 0,
+      "ipv6_addresses": 0
     },
     "Twitch/domains-exact.json": {
       "entries": 3
@@ -702,17 +868,24 @@
       "ipv6_addresses": 85249505283421427408796154593280,
       "ipv6_entries": 21
     },
-    "Twitch/ip.json": {
+    "Twitch/ip-observed.json": {
       "entries": 321027,
       "ipv4_addresses": 61584,
       "ipv4_entries": 54349,
       "ipv6_addresses": 267193,
       "ipv6_entries": 266678
     },
+    "Twitch/ip.json": {
+      "entries": 0,
+      "ipv4_addresses": 0,
+      "ipv4_entries": 0,
+      "ipv6_addresses": 0,
+      "ipv6_entries": 0
+    },
     "YouTube/bundle.json": {
-      "entries": 33053,
-      "ipv4_addresses": 22734,
-      "ipv6_addresses": 21436
+      "entries": 190,
+      "ipv4_addresses": 0,
+      "ipv6_addresses": 0
     },
     "YouTube/domains-exact.json": {
       "entries": 0
@@ -727,21 +900,31 @@
       "ipv6_addresses": 556296741027000511863478879780864,
       "ipv6_entries": 366
     },
-    "YouTube/ip.json": {
+    "YouTube/ip-observed.json": {
       "entries": 32863,
       "ipv4_addresses": 22734,
       "ipv4_entries": 16932,
       "ipv6_addresses": 21436,
       "ipv6_entries": 15931
+    },
+    "YouTube/ip.json": {
+      "entries": 0,
+      "ipv4_addresses": 0,
+      "ipv4_entries": 0,
+      "ipv6_addresses": 0,
+      "ipv6_entries": 0
     }
   },
   "github_verification": {
     "category": "GitHub",
     "families": {
       "ipv4": {
-        "core_addresses_in_official": 186,
-        "core_addresses_outside_official": 13694,
-        "core_outside_official_sample": [
+        "core_addresses_in_official": 0,
+        "core_addresses_outside_official": 0,
+        "core_outside_official_sample": [],
+        "observed_addresses_in_official": 186,
+        "observed_addresses_outside_official": 13694,
+        "observed_outside_official_sample": [
           "3.5.0.1/32",
           "3.5.0.3/32",
           "3.5.0.9/32",
@@ -768,6 +951,7 @@
           "4.208.26.196/31",
           "4.208.26.198/32",
           "4.208.26.200/32",
+          "4.225.11.192/32",
           "4.225.11.194/32",
           "4.225.11.196/32",
           "4.225.11.199/32",
@@ -775,23 +959,25 @@
           "4.228.31.144/31",
           "4.228.31.149/32",
           "4.228.31.150/32",
-          "4.228.31.152/32",
+          "4.228.31.152/31",
           "4.237.22.32/32",
+          "4.237.22.34/32",
           "4.237.22.36/32",
           "4.237.22.38/32",
-          "4.237.22.40/32",
-          "4.249.131.163/32",
-          "4.249.131.164/32",
-          "4.249.131.166/31",
-          "13.107.5.93/32"
+          "4.237.22.40/31",
+          "4.249.131.160/32",
+          "4.249.131.163/32"
         ],
         "official_addresses": 10344,
-        "official_addresses_absent_from_core": 10158
+        "official_addresses_absent_from_core": 10344
       },
       "ipv6": {
-        "core_addresses_in_official": 16,
-        "core_addresses_outside_official": 87,
-        "core_outside_official_sample": [
+        "core_addresses_in_official": 0,
+        "core_addresses_outside_official": 0,
+        "core_outside_official_sample": [],
+        "observed_addresses_in_official": 16,
+        "observed_addresses_outside_official": 87,
+        "observed_outside_official_sample": [
           "2603:1061:14::1/128",
           "2603:1061:14:3::1/128",
           "2603:1061:14:20::1/128",
@@ -814,29 +1000,11 @@
           "2603:1061:14:68::1/128"
         ],
         "official_absent_from_core_sample": [
-          "2606:50c0::/33",
-          "2606:50c0:8000::/120",
-          "2606:50c0:8000::100/126",
-          "2606:50c0:8000::104/128",
-          "2606:50c0:8000::106/127",
-          "2606:50c0:8000::108/125",
-          "2606:50c0:8000::110/124",
-          "2606:50c0:8000::120/123",
-          "2606:50c0:8000::140/124",
-          "2606:50c0:8000::150/127",
-          "2606:50c0:8000::152/128",
-          "2606:50c0:8000::155/128",
-          "2606:50c0:8000::156/127",
-          "2606:50c0:8000::158/125",
-          "2606:50c0:8000::160/123",
-          "2606:50c0:8000::180/121",
-          "2606:50c0:8000::200/124",
-          "2606:50c0:8000::210/126",
-          "2606:50c0:8000::214/128",
-          "2606:50c0:8000::216/127"
+          "2606:50c0::/32",
+          "2a0a:a440::/29"
         ],
         "official_addresses": 713053462628379038341895553024,
-        "official_addresses_absent_from_core": 713053462628379038341895553008
+        "official_addresses_absent_from_core": 713053462628379038341895553024
       }
     },
     "location": "https://api.github.com/meta",
@@ -852,47 +1020,7 @@
     "sha256": "850b1de90b0cdbaebf3f8c1eea095a1d99ea63ad0da8489f62d8d52dc54bb348"
   },
   "overlaps": {
-    "ipv4": {
-      "AI/Apple": 1389,
-      "AI/Discord": 97,
-      "AI/GitHub": 8529,
-      "AI/Microsoft": 12437,
-      "AI/RKNAsnBlock": 43988,
-      "AI/Telegram": 132,
-      "AI/Twitch": 2853,
-      "AI/YouTube": 636,
-      "Apple/Discord": 44,
-      "Apple/GitHub": 4,
-      "Apple/Meta": 909,
-      "Apple/Microsoft": 10413,
-      "Apple/RKNAsnBlock": 36570,
-      "Apple/Telegram": 19,
-      "Apple/Twitch": 3077,
-      "Apple/YouTube": 8,
-      "Discord/Microsoft": 36,
-      "Discord/RKNAsnBlock": 597,
-      "Discord/Telegram": 6,
-      "Discord/Twitch": 216,
-      "Discord/YouTube": 20,
-      "GitHub/Microsoft": 9893,
-      "GitHub/RKNAsnBlock": 13461,
-      "GitHub/Telegram": 4,
-      "Meta/Microsoft": 714,
-      "Meta/RKNAsnBlock": 1160,
-      "Meta/Telegram": 1,
-      "Meta/Twitch": 289,
-      "Meta/YouTube": 592,
-      "Microsoft/RKNAsnBlock": 28963,
-      "Microsoft/Telegram": 17,
-      "Microsoft/Twitch": 2599,
-      "Microsoft/YouTube": 16,
-      "RKNAsnBlock/Telegram": 250,
-      "RKNAsnBlock/Twitch": 55980,
-      "RKNAsnBlock/YouTube": 1405,
-      "Telegram/Twitch": 86,
-      "Telegram/YouTube": 2,
-      "Twitch/YouTube": 16
-    },
+    "ipv4": {},
     "ipv4-extended": {
       "AI/Apple": 27392810,
       "AI/Discord": 14635580,
@@ -930,45 +1058,39 @@
       "Telegram/YouTube": 198683,
       "Twitch/YouTube": 20274189
     },
-    "ipv6": {
-      "AI/Apple": 724,
-      "AI/Discord": 22,
-      "AI/GitHub": 86,
-      "AI/Microsoft": 2108,
-      "AI/RKNAsnBlock": 21466,
-      "AI/Telegram": 97,
-      "AI/Twitch": 395,
-      "AI/YouTube": 586,
-      "Apple/Discord": 6,
-      "Apple/Meta": 837,
-      "Apple/Microsoft": 6835,
-      "Apple/RKNAsnBlock": 76002,
-      "Apple/Twitch": 1087,
-      "Apple/YouTube": 6,
-      "Discord/Microsoft": 19,
-      "Discord/RKNAsnBlock": 188,
-      "Discord/Telegram": 4,
-      "Discord/Twitch": 35,
-      "Discord/YouTube": 22,
-      "GitHub/Microsoft": 81,
-      "GitHub/RKNAsnBlock": 1,
+    "ipv4-observed": {
+      "AI/Apple": 1389,
+      "AI/Discord": 97,
+      "AI/GitHub": 8529,
+      "AI/Microsoft": 12437,
+      "AI/Telegram": 132,
+      "AI/Twitch": 2853,
+      "AI/YouTube": 636,
+      "Apple/Discord": 44,
+      "Apple/GitHub": 4,
+      "Apple/Meta": 909,
+      "Apple/Microsoft": 10413,
+      "Apple/Telegram": 19,
+      "Apple/Twitch": 3077,
+      "Apple/YouTube": 8,
+      "Discord/Microsoft": 36,
+      "Discord/Telegram": 6,
+      "Discord/Twitch": 216,
+      "Discord/YouTube": 20,
+      "GitHub/Microsoft": 9893,
       "GitHub/Telegram": 4,
-      "Meta/Microsoft": 497,
-      "Meta/RKNAsnBlock": 972,
+      "Meta/Microsoft": 714,
       "Meta/Telegram": 1,
-      "Meta/Twitch": 117,
-      "Meta/YouTube": 30,
-      "Microsoft/RKNAsnBlock": 22100,
-      "Microsoft/Telegram": 6,
-      "Microsoft/Twitch": 1055,
-      "Microsoft/YouTube": 18,
-      "RKNAsnBlock/Telegram": 2543,
-      "RKNAsnBlock/Twitch": 266545,
-      "RKNAsnBlock/YouTube": 1402,
-      "Telegram/Twitch": 2,
+      "Meta/Twitch": 289,
+      "Meta/YouTube": 592,
+      "Microsoft/Telegram": 17,
+      "Microsoft/Twitch": 2599,
+      "Microsoft/YouTube": 16,
+      "Telegram/Twitch": 86,
       "Telegram/YouTube": 2,
       "Twitch/YouTube": 16
     },
+    "ipv6": {},
     "ipv6-extended": {
       "AI/Apple": 43337809731042764610332658761728,
       "AI/Discord": 1507810967849593174827133304832,
@@ -1002,6 +1124,36 @@
       "Telegram/Twitch": 1426106925256758076683791106048,
       "Telegram/YouTube": 160932205107099435736886149120,
       "Twitch/YouTube": 158456325028528675187087900672
+    },
+    "ipv6-observed": {
+      "AI/Apple": 724,
+      "AI/Discord": 22,
+      "AI/GitHub": 86,
+      "AI/Microsoft": 2108,
+      "AI/Telegram": 97,
+      "AI/Twitch": 395,
+      "AI/YouTube": 586,
+      "Apple/Discord": 6,
+      "Apple/Meta": 837,
+      "Apple/Microsoft": 6835,
+      "Apple/Twitch": 1087,
+      "Apple/YouTube": 6,
+      "Discord/Microsoft": 19,
+      "Discord/Telegram": 4,
+      "Discord/Twitch": 35,
+      "Discord/YouTube": 22,
+      "GitHub/Microsoft": 81,
+      "GitHub/Telegram": 4,
+      "Meta/Microsoft": 497,
+      "Meta/Telegram": 1,
+      "Meta/Twitch": 117,
+      "Meta/YouTube": 30,
+      "Microsoft/Telegram": 6,
+      "Microsoft/Twitch": 1055,
+      "Microsoft/YouTube": 18,
+      "Telegram/Twitch": 2,
+      "Telegram/YouTube": 2,
+      "Twitch/YouTube": 16
     }
   },
   "rule_set_version": 3,
@@ -1024,10 +1176,12 @@
       "counts": {
         "domains": 415,
         "domains-exact": 0,
-        "ipv4": 49675,
+        "ipv4": 0,
         "ipv4-extended": 1195,
-        "ipv6": 22296,
-        "ipv6-extended": 27
+        "ipv4-observed": 49675,
+        "ipv6": 0,
+        "ipv6-extended": 27,
+        "ipv6-observed": 22296
       },
       "excluded": {},
       "location": "https://iplist.opencck.org/?format=json&site=chatgpt.com&site=aistudio.google.com&site=canva.com&site=claude.ai&site=copilot&site=deepl.com&site=elevenlabs.io&site=grammarly.com&site=grok.com&site=kilo.ai&site=perplexity.ai&site=pollo.ai",
@@ -1124,10 +1278,12 @@
       "counts": {
         "domains": 50090,
         "domains-exact": 0,
-        "ipv4": 73522,
+        "ipv4": 0,
         "ipv4-extended": 1835,
-        "ipv6": 84076,
-        "ipv6-extended": 48
+        "ipv4-observed": 73522,
+        "ipv6": 0,
+        "ipv6-extended": 48,
+        "ipv6-observed": 84076
       },
       "excluded": {
         "100.105.0.0/16": "nonpublic or multicast address/network",
@@ -1376,8 +1532,10 @@
         "domains-exact": 0,
         "ipv4": 0,
         "ipv4-extended": 10,
+        "ipv4-observed": 0,
         "ipv6": 0,
-        "ipv6-extended": 0
+        "ipv6-extended": 0,
+        "ipv6-observed": 0
       },
       "excluded": {},
       "location": "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/Discord.lst",
@@ -1391,8 +1549,10 @@
         "domains-exact": 0,
         "ipv4": 0,
         "ipv4-extended": 0,
+        "ipv4-observed": 0,
         "ipv6": 0,
-        "ipv6-extended": 1
+        "ipv6-extended": 1,
+        "ipv6-observed": 0
       },
       "excluded": {},
       "location": "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv6/Discord.lst",
@@ -1411,8 +1571,10 @@
         "domains-exact": 0,
         "ipv4": 0,
         "ipv4-extended": 0,
+        "ipv4-observed": 0,
         "ipv6": 0,
-        "ipv6-extended": 0
+        "ipv6-extended": 0,
+        "ipv6-observed": 0
       },
       "excluded": {},
       "location": "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/discord.lst",
@@ -1424,10 +1586,12 @@
       "counts": {
         "domains": 0,
         "domains-exact": 0,
-        "ipv4": 5416,
+        "ipv4": 0,
         "ipv4-extended": 87,
-        "ipv6": 392,
-        "ipv6-extended": 6
+        "ipv4-observed": 5416,
+        "ipv6": 0,
+        "ipv6-extended": 6,
+        "ipv6-observed": 392
       },
       "excluded": {},
       "location": "https://iplist.opencck.org/?format=json&site=discord.com&site=discord.gg&site=discord.media",
@@ -1468,8 +1632,10 @@
         "domains-exact": 0,
         "ipv4": 0,
         "ipv4-extended": 0,
+        "ipv4-observed": 0,
         "ipv6": 0,
-        "ipv6-extended": 0
+        "ipv6-extended": 0,
+        "ipv6-observed": 0
       },
       "excluded": {},
       "location": "data/discord-domains.txt",
@@ -1481,10 +1647,12 @@
       "counts": {
         "domains": 19,
         "domains-exact": 0,
-        "ipv4": 698,
+        "ipv4": 0,
         "ipv4-extended": 80,
-        "ipv6": 661,
-        "ipv6-extended": 4
+        "ipv4-observed": 698,
+        "ipv6": 0,
+        "ipv6-extended": 4,
+        "ipv6-observed": 661
       },
       "excluded": {},
       "location": "https://beta.iplist.opencck.org/?format=json&site=google%40gemini&site=google%40google-gemini",
@@ -1524,10 +1692,12 @@
       "counts": {
         "domains": 411,
         "domains-exact": 25,
-        "ipv4": 13880,
+        "ipv4": 0,
         "ipv4-extended": 79,
-        "ipv6": 103,
-        "ipv6-extended": 4
+        "ipv4-observed": 13880,
+        "ipv6": 0,
+        "ipv6-extended": 4,
+        "ipv6-observed": 103
       },
       "excluded": {
         "192.0.2.0/24": "nonpublic or multicast address/network",
@@ -1554,8 +1724,10 @@
         "domains-exact": 0,
         "ipv4": 0,
         "ipv4-extended": 78,
+        "ipv4-observed": 0,
         "ipv6": 0,
-        "ipv6-extended": 0
+        "ipv6-extended": 0,
+        "ipv6-observed": 0
       },
       "excluded": {},
       "location": "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/meta.lst",
@@ -1569,8 +1741,10 @@
         "domains-exact": 0,
         "ipv4": 0,
         "ipv4-extended": 0,
+        "ipv4-observed": 0,
         "ipv6": 0,
-        "ipv6-extended": 40
+        "ipv6-extended": 40,
+        "ipv6-observed": 0
       },
       "excluded": {},
       "location": "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv6/meta.lst",
@@ -1584,8 +1758,10 @@
         "domains-exact": 0,
         "ipv4": 0,
         "ipv4-extended": 0,
+        "ipv4-observed": 0,
         "ipv6": 0,
-        "ipv6-extended": 0
+        "ipv6-extended": 0,
+        "ipv6-observed": 0
       },
       "excluded": {},
       "location": "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/meta.lst",
@@ -1597,10 +1773,12 @@
       "counts": {
         "domains": 3029,
         "domains-exact": 0,
-        "ipv4": 5241,
+        "ipv4": 0,
         "ipv4-extended": 743,
-        "ipv6": 3835,
-        "ipv6-extended": 415
+        "ipv4-observed": 5241,
+        "ipv6": 0,
+        "ipv6-extended": 415,
+        "ipv6-observed": 3835
       },
       "excluded": {
         "2001::/32": "nonpublic or multicast address/network",
@@ -1806,10 +1984,12 @@
       "counts": {
         "domains": 1102,
         "domains-exact": 0,
-        "ipv4": 31397,
+        "ipv4": 0,
         "ipv4-extended": 1394,
-        "ipv6": 24492,
-        "ipv6-extended": 32
+        "ipv4-observed": 31397,
+        "ipv6": 0,
+        "ipv6-extended": 32,
+        "ipv6-observed": 24492
       },
       "excluded": {
         "172.29.231.84": "nonpublic or multicast address/network",
@@ -1910,10 +2090,12 @@
       "counts": {
         "domains": 3,
         "domains-exact": 0,
-        "ipv4": 5,
+        "ipv4": 0,
         "ipv4-extended": 5,
-        "ipv6": 5,
-        "ipv6-extended": 2
+        "ipv4-observed": 5,
+        "ipv6": 0,
+        "ipv6-extended": 2,
+        "ipv6-observed": 5
       },
       "excluded": {},
       "location": "https://iplist.opencck.org/?format=json&site=revanced.app",
@@ -5438,8 +5620,10 @@
         "domains-exact": 0,
         "ipv4": 95074,
         "ipv4-extended": 0,
+        "ipv4-observed": 0,
         "ipv6": 22967,
-        "ipv6-extended": 0
+        "ipv6-extended": 0,
+        "ipv6-observed": 0
       },
       "empty_asns": [
         "AS27458",
@@ -5465,8 +5649,10 @@
         "domains-exact": 0,
         "ipv4": 0,
         "ipv4-extended": 10,
+        "ipv4-observed": 0,
         "ipv6": 0,
-        "ipv6-extended": 0
+        "ipv6-extended": 0,
+        "ipv6-observed": 0
       },
       "excluded": {},
       "location": "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/telegram.lst",
@@ -5480,8 +5666,10 @@
         "domains-exact": 0,
         "ipv4": 0,
         "ipv4-extended": 0,
+        "ipv4-observed": 0,
         "ipv6": 0,
-        "ipv6-extended": 4
+        "ipv6-extended": 4,
+        "ipv6-observed": 0
       },
       "excluded": {},
       "location": "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv6/telegram.lst",
@@ -5495,8 +5683,10 @@
         "domains-exact": 0,
         "ipv4": 0,
         "ipv4-extended": 0,
+        "ipv4-observed": 0,
         "ipv6": 0,
-        "ipv6-extended": 0
+        "ipv6-extended": 0,
+        "ipv6-observed": 0
       },
       "excluded": {},
       "location": "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/telegram.lst",
@@ -5508,10 +5698,12 @@
       "counts": {
         "domains": 0,
         "domains-exact": 0,
-        "ipv4": 375,
+        "ipv4": 0,
         "ipv4-extended": 128,
-        "ipv6": 2648,
-        "ipv6-extended": 13
+        "ipv4-observed": 375,
+        "ipv6": 0,
+        "ipv6-extended": 13,
+        "ipv6-observed": 2648
       },
       "excluded": {},
       "location": "https://iplist.opencck.org/?format=json&site=telegram.org",
@@ -5533,8 +5725,10 @@
         "domains-exact": 0,
         "ipv4": 9,
         "ipv4-extended": 0,
+        "ipv4-observed": 0,
         "ipv6": 5,
-        "ipv6-extended": 0
+        "ipv6-extended": 0,
+        "ipv6-observed": 0
       },
       "excluded": {},
       "location": "https://core.telegram.org/resources/cidr.txt",
@@ -5546,10 +5740,12 @@
       "counts": {
         "domains": 10348,
         "domains-exact": 3,
-        "ipv4": 61584,
+        "ipv4": 0,
         "ipv4-extended": 781,
-        "ipv6": 267193,
-        "ipv6-extended": 26
+        "ipv4-observed": 61584,
+        "ipv6": 0,
+        "ipv6-extended": 26,
+        "ipv6-observed": 267193
       },
       "excluded": {},
       "location": "https://beta.iplist.opencck.org/?format=json&group=twitch",
@@ -5616,10 +5812,12 @@
       "counts": {
         "domains": 15316,
         "domains-exact": 0,
-        "ipv4": 22729,
+        "ipv4": 0,
         "ipv4-extended": 797,
-        "ipv6": 21431,
-        "ipv6-extended": 367
+        "ipv4-observed": 22729,
+        "ipv6": 0,
+        "ipv6-extended": 367,
+        "ipv6-observed": 21431
       },
       "excluded": {
         "2001::/32": "nonpublic or multicast address/network",
